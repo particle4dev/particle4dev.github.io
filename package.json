@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "particle4dev.github.io",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Nam Hoang <particle4dev@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "gatsby": "^2.1.27",
@@ -35,13 +35,13 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/particle4dev/particle4dev.github.io"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/particle4dev/particle4dev.github.io/issues"
   }
 }
