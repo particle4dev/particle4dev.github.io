@@ -41,12 +41,11 @@ const Layout = ({ children, classes }) => (
       }
     `}
     render={data => (
-      <>
-        <MuiThemeProvider theme={theme}>
-          <CssBaseline />
-          {children}
-          {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-          {/* <div
+      <MuiThemeProvider theme={theme}>
+        <CssBaseline />
+        {children}
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+        {/* <div
             style={{
               margin: `0 auto`,
               maxWidth: 960,
@@ -61,8 +60,7 @@ const Layout = ({ children, classes }) => (
               <a href="https://www.gatsbyjs.org">Gatsby</a>
             </footer>
           </div> */}
-        </MuiThemeProvider>
-      </>
+      </MuiThemeProvider>
     )}
   />
 )
