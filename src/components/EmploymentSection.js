@@ -3,9 +3,9 @@ import ClassNames from "classnames"
 import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
 import IconButton from "@material-ui/core/IconButton"
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import Collapse from "@material-ui/core/Collapse"
 import Grid from "@material-ui/core/Grid"
+import ExpandMoreIcon from "./ExpandMoreIcon"
 import RichText from "./RichText"
 
 const styles = theme => ({

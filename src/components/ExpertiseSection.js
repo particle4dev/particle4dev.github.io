@@ -16,10 +16,6 @@ const styles = theme => ({
     marginBottom: "0.35em",
   },
 
-  index__richText: {
-    lineHeight: "34px",
-  },
-
   index__chip: {
     margin: theme.spacing.unit,
   },
@@ -32,12 +28,7 @@ function ExpertiseSection({ classes }) {
         <Typography variant="h5" gutterBottom>
           Expertise
         </Typography>
-        <div
-          className={ClassNames(
-            classes.index__section,
-            classes.index__richText
-          )}
-        >
+        <RichText className={classes.index__section}>
           <Chip label="Javascript" className={classes.index__chip} />
           <Chip label="Agile" className={classes.index__chip} />
           <Chip label="AWS" className={classes.index__chip} />
@@ -59,7 +50,7 @@ function ExpertiseSection({ classes }) {
           <Chip label="Ethereum" className={classes.index__chip} />
           <Chip label="Golang" className={classes.index__chip} />
           <Chip label="..." className={classes.index__chip} />
-        </div>
+        </RichText>
       </Grid>
     </Grid>
   )

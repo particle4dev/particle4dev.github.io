@@ -6,7 +6,6 @@
   "author": "Nam Hoang <particle4dev@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^3.9.2",
-    "@material-ui/icons": "^3.0.2",
     "classnames": "^2.2.6",
     "gatsby": "^2.1.27",
     "gatsby-image": "^2.0.31",
