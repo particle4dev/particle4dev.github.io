@@ -14,7 +14,6 @@ const styles = theme => ({
   index: {
     justifyContent: "center",
     padding: "32px 0",
-    backgroundColor: " #f1f3f4",
   },
 
   index__section: {

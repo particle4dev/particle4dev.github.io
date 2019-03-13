@@ -6,17 +6,19 @@ import IconButton from "@material-ui/core/IconButton"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import Collapse from "@material-ui/core/Collapse"
 import Grid from "@material-ui/core/Grid"
+import RichText from "./RichText"
 
 const styles = theme => ({
+  index: {
+    justifyContent: "center",
+    padding: "32px 0",
+    backgroundColor: " #f1f3f4",
+  },
+
   index__date: {
     fontFamily: "Roboto Mono",
     fontSize: 14,
     color: "#5f6368",
-  },
-
-  index: {
-    justifyContent: "center",
-    padding: "32px 0",
   },
 
   index__section: {
@@ -63,12 +65,7 @@ function EmploymentSection({ classes }) {
         <Typography variant="h5" gutterBottom>
           Employment
         </Typography>
-        <div
-          className={ClassNames(
-            classes.index__section,
-            classes.index__richText
-          )}
-        >
+        <RichText className={classes.index__section}>
           <header className={classes.index__header}>
             <Typography variant="h6">
               Founder at{" "}
@@ -108,14 +105,9 @@ function EmploymentSection({ classes }) {
               </a>
             </Typography>
           </Collapse>
-        </div>
+        </RichText>
 
-        <div
-          className={ClassNames(
-            classes.index__section,
-            classes.index__richText
-          )}
-        >
+        <RichText className={classes.index__section}>
           <header className={classes.index__header}>
             <Typography variant="h6">Fullstack Developer</Typography>
             <time className={classes.index__date}>
@@ -159,13 +151,9 @@ function EmploymentSection({ classes }) {
               </ul>
             </Typography>
           </Collapse>
-        </div>
-        <div
-          className={ClassNames(
-            classes.index__section,
-            classes.index__richText
-          )}
-        >
+        </RichText>
+
+        <RichText className={classes.index__section}>
           <header className={classes.index__header}>
             <Typography variant="h6">Technical Consultant</Typography>
             <time className={classes.index__date}>
@@ -218,14 +206,9 @@ function EmploymentSection({ classes }) {
               </ul>
             </Typography>
           </Collapse>
-        </div>
+        </RichText>
 
-        <div
-          className={ClassNames(
-            classes.index__section,
-            classes.index__richText
-          )}
-        >
+        <RichText className={classes.index__section}>
           <header className={classes.index__header}>
             <Typography variant="h6">Software Engineer</Typography>
             <time className={classes.index__date}>
@@ -272,14 +255,9 @@ function EmploymentSection({ classes }) {
               </ul>
             </Typography>
           </Collapse>
-        </div>
+        </RichText>
 
-        <div
-          className={ClassNames(
-            classes.index__section,
-            classes.index__richText
-          )}
-        >
+        <RichText className={classes.index__section}>
           <header className={classes.index__header}>
             <Typography variant="h6">Fullstack Developer</Typography>
             <time className={classes.index__date}>
@@ -318,19 +296,14 @@ function EmploymentSection({ classes }) {
               </ul>
             </Typography>
           </Collapse>
-        </div>
+        </RichText>
 
-        <div
-          className={ClassNames(
-            classes.index__section,
-            classes.index__richText
-          )}
-        >
+        <RichText className={classes.index__section}>
           <header>
             <Typography variant="h6">Freelancer</Typography>
             <time className={classes.index__date}>08/2011–07/2012</time>
           </header>
-        </div>
+        </RichText>
       </Grid>
     </Grid>
   )
