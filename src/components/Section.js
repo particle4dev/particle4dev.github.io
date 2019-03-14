@@ -8,6 +8,9 @@ const styles = theme => ({
   index: {
     justifyContent: "center",
     padding: "32px 0",
+    [theme.breakpoints.down("sm")]: {
+      padding: "32px 16px 32px 16px",
+    },
   },
 
   index__grayColor: {

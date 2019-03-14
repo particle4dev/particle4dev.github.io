@@ -1,8 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { withStyles } from "@material-ui/core/styles"
-import Grid from "@material-ui/core/Grid"
-import Typography from "@material-ui/core/Typography"
 import AboutSection from "../components/AboutSection"
 import ExpertiseSection from "../components/ExpertiseSection"
 import EducationSection from "../components/EducationSection"
@@ -13,7 +11,7 @@ import OrganizationsSection from "../components/OrganizationsSection"
 import InterestsSection from "../components/InterestsSection"
 import OpensourceSection from "../components/OpensourceSection"
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 
 const styles = theme => ({})
