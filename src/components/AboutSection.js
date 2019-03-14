@@ -1,7 +1,7 @@
 import React from "react"
 import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
-import Link from '@material-ui/core/Link';
+import Link from "@material-ui/core/Link"
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemIcon from "@material-ui/core/ListItemIcon"
@@ -44,65 +44,78 @@ function AboutSection({ classes }) {
         AWS. I am enthusiastic about my job and excited to come in every day to
         learn and contribute.
         <br />
-        Here to see a summary of the technologies I've been involved with.
+        <Link href="#skills-section">Here</Link> {" "}
+        to see a summary of the technologies I've been involved with.
       </Typography>
       <Grid container spacing={24}>
-        <Grid item xs={12} sm={6} style={{
-              padding: '0px 12px'
-        }}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          style={{
+            padding: "0px 12px",
+          }}
+        >
           <List dense>
             <ListItem disableGutters>
               <ListItemIcon>
                 <MailIcon />
               </ListItemIcon>
-              <a href="mailto:particle4dev@gmail.com">particle4dev@gmail.com</a>
+              <Link href="mailto:particle4dev@gmail.com">
+                particle4dev@gmail.com
+              </Link>
             </ListItem>
             <ListItem disableGutters>
               <ListItemIcon>
                 <PhoneIcon />
               </ListItemIcon>
-              <a href="tel:+84934579522">+84934579522</a>
+              <Link href="tel:+84934579522">+84934579522 </Link>
             </ListItem>
             <ListItem disableGutters>
               <ListItemIcon>
                 <GithubIcon />
               </ListItemIcon>
-              <a href="https://github.com/particle4dev" target="blank">
+              <Link href="https://github.com/particle4dev" target="blank">
                 https://github.com/particle4dev
-              </a>
+              </Link>
             </ListItem>
           </List>
         </Grid>
-        <Grid item xs={12} sm={6}style={{
-              padding: '0px 12px'
-        }}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          style={{
+            padding: "0px 12px",
+          }}
+        >
           <List dense>
             <ListItem disableGutters>
               <ListItemIcon>
                 <TwitterIcon />
               </ListItemIcon>
-              <a href="https://twitter.com/particle4dev" target="blank">
+              <Link href="https://twitter.com/particle4dev" target="blank">
                 https://twitter.com/particle4dev
-              </a>
+              </Link>
             </ListItem>
             <ListItem disableGutters>
               <ListItemIcon>
                 <FacebookIcon />
               </ListItemIcon>
-              <a href="https://www.facebook.com/namhoang28" target="blank">
+              <Link href="https://www.facebook.com/namhoang28" target="blank">
                 https://www.facebook.com/namhoang28
-              </a>
+              </Link>
             </ListItem>
             <ListItem disableGutters>
               <ListItemIcon>
                 <LinkedinIcon />
               </ListItemIcon>
-              <a
+              <Link
                 href="https://www.linkedin.com/in/hoang-van-nam-25a30612a"
                 target="blank"
               >
-                https://www.linkedin.com/in/hoang-van-nam-25a30612a
-              </a>
+                https://www.linkedin.com/in/hoang-van-nam-25a30612a{" "}
+              </Link>
             </ListItem>
           </List>
         </Grid>

@@ -15,7 +15,7 @@ const styles = theme => ({
 function SkillsSection({ classes }) {
   return (
     <Section color>
-      <Typography variant="h5" gutterBottom>
+      <Typography id="skills-section" variant="h5" gutterBottom>
         Programming Skills
       </Typography>
       <RichText>
