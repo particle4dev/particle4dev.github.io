@@ -8,7 +8,7 @@ import Section from "./Section"
 
 const styles = theme => ({
   index__section: {
-    marginBottom: "0.35em",
+    marginBottom: "32px",
   },
 
   index__chip: {
@@ -23,7 +23,7 @@ function ExpertiseSection({ classes }) {
   }
   return (
     <Section>
-      <Typography variant="h5" gutterBottom>
+      <Typography variant="h5" gutterBottom className={classes.index__section}>
         Expertise
       </Typography>
       <RichText className={classes.index__section}>

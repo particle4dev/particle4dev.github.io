@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { StaticQuery, graphql } from "gatsby"
 import ClassNames from "classnames"
 import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
@@ -8,6 +9,66 @@ import ExpandMoreIcon from "../icons/ExpandMoreIcon"
 import RichText from "./RichText"
 import Section from "./Section"
 
+import Img from "gatsby-image"
+import GridList from "@material-ui/core/GridList"
+import GridListTile from "@material-ui/core/GridListTile"
+const tileData = [
+  {
+    img: "https://material-ui.com/static/images/grid-list/breakfast.jpg",
+    title: "Breakfast",
+    author: "jill111",
+    cols: 2,
+    featured: true,
+  },
+  {
+    img: "https://material-ui.com/static/images/grid-list/burgers.jpg",
+    title: "Tasty burger",
+    author: "director90",
+  },
+  {
+    img: "https://material-ui.com/static/images/grid-list/camera.jpg",
+    title: "Camera",
+    author: "Danson67",
+  },
+  {
+    img: "https://material-ui.com/static/images/grid-list/morning.jpg",
+    title: "Morning",
+    author: "fancycrave1",
+    featured: true,
+  },
+  {
+    img: "https://material-ui.com/static/images/grid-list/hats.jpg",
+    title: "Hats",
+    author: "Hans",
+  },
+]
+
+const atomicdexQuery = graphql`
+  query {
+    images: allFile(filter: { name: { regex: "/^atomicdex/" } }) {
+      edges {
+        node {
+          relativePath
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
+const renderImage = ({ node }) => {
+  console.log(node)
+  const { childImageSharp } = node
+  return (
+    <GridListTile key={node.relativePath}>
+      <Img fluid={childImageSharp.fluid} />
+    </GridListTile>
+  )
+}
+
 const styles = theme => ({
   index__date: {
     fontFamily: "Roboto Mono",
@@ -16,7 +77,7 @@ const styles = theme => ({
   },
 
   index__section: {
-    marginBottom: "0.35em",
+    marginBottom: "32px",
   },
 
   index__richText: {
@@ -55,7 +116,7 @@ function EmploymentSection({ classes }) {
 
   return (
     <Section color>
-      <Typography variant="h5" gutterBottom>
+      <Typography variant="h5" gutterBottom className={classes.index__section}>
         Employment
       </Typography>
       <RichText className={classes.index__section}>
@@ -146,8 +207,8 @@ function EmploymentSection({ classes }) {
                 gutterBottom
                 className={classes.index__richText}
               >
-                Dice Application: An instant exchange built on top of BarterDEX
-                swap. It is inspired by Changelly and ShapeShift.
+                Dice Application: This is a virtual dice app for Dice Smart
+                Contracts.
               </Typography>
             </li>
             <li>
@@ -156,9 +217,15 @@ function EmploymentSection({ classes }) {
                 gutterBottom
                 className={classes.index__richText}
               >
-                Atomicdex Application: This is a virtual dice app for Dice Smart
-                Contracts.
+                Atomicdex Application: An instant exchange built on top of
+                BarterDEX swap. It is inspired by Changelly and ShapeShift.
               </Typography>
+              <GridList cols={3}>
+                <StaticQuery
+                  query={atomicdexQuery}
+                  render={data => data.images.edges.map(renderImage)}
+                />
+              </GridList>
             </li>
           </ul>
         </Collapse>
@@ -197,23 +264,75 @@ function EmploymentSection({ classes }) {
             outsourcing companies.
             <br />
             As a Technical Consultant, my responsibilities are:
-            <ul>
-              <li>Interview and hire JS developers</li>
-              <li>Train the team about react and nodejs</li>
-              <li>
+          </Typography>
+          <ul>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Interview and hire JS developers
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Train the team about react and nodejs
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
                 Work with devops team to set up infrastructure for a customer
-                <ul>
-                  <li>Setup mongodb for staging and production environment</li>
-                  <li>
+              </Typography>
+              <ul>
+                <li>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.index__richText}
+                  >
+                    Setup mongodb for staging and production environment
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.index__richText}
+                  >
                     Use Troposphere, Ansible to create and run infrastructure on
                     AWS
-                  </li>
-                  <li>Deploy application on staging environment ...</li>
-                </ul>
-              </li>
-              <li>Work with core team to design database for some service</li>
-            </ul>
-          </Typography>
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.index__richText}
+                  >
+                    Deploy application on staging environment ...
+                  </Typography>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Work with core team to design database for some service
+              </Typography>
+            </li>
+          </ul>
         </Collapse>
       </RichText>
 
@@ -245,23 +364,67 @@ function EmploymentSection({ classes }) {
             experiences with friends and community.
             <br />
             As a Fullstack and Devops engineer, my responsibilities are:
-            <ul>
-              <li>
-                Built biz manager service to help the shop manage their deals :
-                <ul>
-                  <li>Designed and implemented RESTful APIs</li>
-                  <li>Worked with React and Flux related stack</li>
-                  <li>Setup TDD approach</li>
-                </ul>
-              </li>
-              <li>Built media service with nodejs, s3, cloudfront</li>
-              <li>
+          </Typography>
+          <ul>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Built biz manager service to help the shop manage their deals:
+              </Typography>
+              <ul>
+                <li>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.index__richText}
+                  >
+                    Designed and implemented RESTful APIs
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.index__richText}
+                  >
+                    Worked with React and Flux related stack
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.index__richText}
+                  >
+                    Setup TDD approach
+                  </Typography>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Built media service with nodejs, s3, cloudfront
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
                 Setup deployment pipeline for Production environment, work with
                 many modern technologies like Jenkins, AWS (EC2, ELB), Docker
                 ...
-              </li>
-            </ul>
-          </Typography>
+              </Typography>
+            </li>
+          </ul>
         </Collapse>
       </RichText>
 
@@ -294,15 +457,37 @@ function EmploymentSection({ classes }) {
             worked on some projects:
             <br />
             Home Game: An open house app for real estate agents
-            <ul>
-              <li>Stack: Nodejs/Meteor/Mongodb/Cordova</li>
-            </ul>
+          </Typography>
+          <ul>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Stack: Nodejs/Meteor/Mongodb/Cordova
+              </Typography>
+            </li>
+          </ul>
+          <Typography
+            variant="body1"
+            gutterBottom
+            className={classes.index__richText}
+          >
             Suitor: Find people you're interested in nearby and meetup as
             friends or something more
-            <ul>
-              <li>Stack : Nodejs/Meteor/Mongodb/Cordova</li>
-            </ul>
           </Typography>
+          <ul>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Stack : Nodejs/Meteor/Mongodb/Cordova
+              </Typography>
+            </li>
+          </ul>
         </Collapse>
       </RichText>
 
