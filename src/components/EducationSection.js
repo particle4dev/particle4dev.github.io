@@ -7,9 +7,11 @@ import Section from "./Section"
 
 const styles = theme => ({
   index__date: {
-    fontFamily: "Roboto Mono",
-    fontSize: 14,
-    color: "#5f6368",
+    color: "rgba(0, 0, 0, 0.87)",
+    fontSize: "1rem",
+    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    fontWeight: 400,
+    letterSpacing: "0.00938em",
   },
 
   index__section: {
