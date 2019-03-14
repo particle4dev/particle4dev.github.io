@@ -32,7 +32,7 @@ function AboutSection({ classes }) {
         className={classes.index__richText}
       >
         Software engineer / DevOps / Open source / Scrum Master / who love to
-        build a great product
+        build a great product.
       </Typography>
       <Typography
         variant="body1"
@@ -53,7 +53,7 @@ function AboutSection({ classes }) {
           xs={12}
           sm={6}
           style={{
-            padding: "0px 12px",
+            padding: "12px 12px 0px",
           }}
         >
           <List dense>
