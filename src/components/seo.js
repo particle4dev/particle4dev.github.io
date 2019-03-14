@@ -77,7 +77,20 @@ function SEO({ description, lang, meta, keywords, title }) {
             : []
         )
         .concat(meta)}
-    />
+    >
+      <meta charset="utf-8" />
+      <meta
+        name="viewport"
+        content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
+      />
+      <link
+        href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,500|Google+Sans:300,400|Material+Icons|Google+Sans+Display:400,500"
+        rel="stylesheet"
+      />
+      <title>
+        Nam Hoang - Software engineer/DevOps/Open source/Scrum Master
+      </title>
+    </Helmet>
   )
 }
 
