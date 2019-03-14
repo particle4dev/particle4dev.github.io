@@ -4,7 +4,7 @@ import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
 import IconButton from "@material-ui/core/IconButton"
 import Collapse from "@material-ui/core/Collapse"
-import ExpandMoreIcon from "./ExpandMoreIcon"
+import ExpandMoreIcon from "../icons/ExpandMoreIcon"
 import RichText from "./RichText"
 import Section from "./Section"
 
