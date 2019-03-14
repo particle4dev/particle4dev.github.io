@@ -128,21 +128,39 @@ function EmploymentSection({ classes }) {
           >
             As a Fullstack Developer, I worked on some decentralized
             applications with Komodo technologies:
-            <ul>
-              <li>
+          </Typography>
+          <ul>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
                 dICO Application: A Decentralized ICO application built on top
                 of BarterDEX swap.
-              </li>
-              <li>
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
                 Dice Application: An instant exchange built on top of BarterDEX
                 swap. It is inspired by Changelly and ShapeShift.
-              </li>
-              <li>
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
                 Atomicdex Application: This is a virtual dice app for Dice Smart
                 Contracts.
-              </li>
-            </ul>
-          </Typography>
+              </Typography>
+            </li>
+          </ul>
         </Collapse>
       </RichText>
 

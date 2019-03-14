@@ -1,5 +1,5 @@
 import React from "react"
-import ClassNames from "classnames"
+import { navigate } from "gatsby"
 import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
 import Chip from "@material-ui/core/Chip"
@@ -17,33 +17,131 @@ const styles = theme => ({
 })
 
 function ExpertiseSection({ classes }) {
+  const handleClick = evt => {
+    evt.preventDefault()
+    navigate("#skills-section")
+  }
   return (
     <Section>
       <Typography variant="h5" gutterBottom>
         Expertise
       </Typography>
       <RichText className={classes.index__section}>
-        <Chip label="Javascript" className={classes.index__chip} />
-        <Chip label="Agile" className={classes.index__chip} />
-        <Chip label="AWS" className={classes.index__chip} />
-        <Chip label="Node.JS" className={classes.index__chip} />
-        <Chip label="Express.js" className={classes.index__chip} />
-        <Chip label="Mongodb" className={classes.index__chip} />
-        <Chip label="React" className={classes.index__chip} />
-        <Chip label="React Ecosystem" className={classes.index__chip} />
-        <Chip label="Electron" className={classes.index__chip} />
-        <Chip label="Progressive Web App" className={classes.index__chip} />
-        <Chip label="Material Design" className={classes.index__chip} />
-        <Chip label="Scrum" className={classes.index__chip} />
-        <Chip label="Docker" className={classes.index__chip} />
-        <Chip label="Terraform" className={classes.index__chip} />
-        <Chip label="Git" className={classes.index__chip} />
-        <Chip label="Gitlab CI" className={classes.index__chip} />
-        <Chip label="Blockchain" className={classes.index__chip} />
-        <Chip label="Komodo" className={classes.index__chip} />
-        <Chip label="Ethereum" className={classes.index__chip} />
-        <Chip label="Golang" className={classes.index__chip} />
-        <Chip label="..." className={classes.index__chip} />
+        <Chip
+          label="Javascript"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Agile"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="AWS"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Node.JS"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Express.js"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Mongodb"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="React"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="React Ecosystem"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Electron"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Serverless "
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Microservice "
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Progressive Web App"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Material Design"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Scrum"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Docker"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Terraform"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Git"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Gitlab CI"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Blockchain"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Komodo"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Ethereum"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="Golang"
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
+        <Chip
+          label="more ..."
+          onClick={handleClick}
+          className={classes.index__chip}
+        />
       </RichText>
     </Section>
   )
