@@ -6,34 +6,51 @@ import Section from "./Section"
 
 const styles = theme => ({
   index__date: {
-    fontFamily: "Roboto Mono",
-    fontSize: 14,
-    color: "#5f6368",
+    color: "rgba(0, 0, 0, 0.87)",
+    fontSize: "1rem",
+    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    fontWeight: 400,
+    letterSpacing: "0.00938em",
+  },
+
+  index__section: {
+    marginBottom: "32px",
   },
 })
 
 function SkillsSection({ classes }) {
   return (
     <Section color>
-      <Typography id="skills-section" variant="h5" gutterBottom>
+      <Typography
+        id="skills-section"
+        variant="h5"
+        gutterBottom
+        className={classes.index__section}
+      >
         Programming Skills
       </Typography>
-      <RichText>
-        <header>
-          <Typography variant="h6" gutterBottom>
-            Software engineering && devops && Scrum master
-          </Typography>
-        </header>
+
+      <RichText className={classes.index__section}>
+        <Typography variant="h6" gutterBottom>
+          Software engineering && devops && Scrum master
+        </Typography>
+      </RichText>
+
+      <RichText className={classes.index__section}>
         <Typography variant="h6">
           Product Development Process: Scrum, Agile
         </Typography>
         <div className={classes.index__date}>Tools: pivotaltracker, trello</div>
+      </RichText>
 
+      <RichText className={classes.index__section}>
         <Typography variant="h6">Source Code Management: Git</Typography>
         <div className={classes.index__date}>
           Tools: github, gitlab, bitbucket
         </div>
+      </RichText>
 
+      <RichText className={classes.index__section}>
         <Typography variant="h6">Language</Typography>
         <div className={classes.index__date}>
           Proficient: JS/Node.js
@@ -42,28 +59,38 @@ function SkillsSection({ classes }) {
           <br />
           Currently learning: Go, Python
         </div>
+      </RichText>
 
+      <RichText className={classes.index__section}>
         <Typography variant="h6">AWS</Typography>
         <div className={classes.index__date}>
           ECS, ALB, EC2, ELB, Cloudfront, VPC, S3, Redshift, Route53, Serverless
           (Api Gateway, Lambda), IAM
         </div>
+      </RichText>
 
+      <RichText className={classes.index__section}>
         <Typography variant="h6">Devops</Typography>
         <div className={classes.index__date}>
           Jenkins, Consul, ELK, Terraform, setup CI/CD
         </div>
+      </RichText>
 
+      <RichText className={classes.index__section}>
         <Typography variant="h6">Docker</Typography>
         <div className={classes.index__date}>
           Docker engine, docker compose, docker swarm
         </div>
+      </RichText>
 
+      <RichText className={classes.index__section}>
         <Typography variant="h6">Database</Typography>
         <div className={classes.index__date}>
           Mongodb, InfluxData, Redis, Mysql, Postgresql
         </div>
+      </RichText>
 
+      <RichText>
         <Typography variant="h6">OTHER SKILLS</Typography>
         <div className={classes.index__date}>
           Git, Cordova, Nginx, Digitalocean (Deployment and Configuration),

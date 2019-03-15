@@ -1,12 +1,19 @@
 import React, { useState } from "react"
 import ClassNames from "classnames"
 import { withStyles } from "@material-ui/core/styles"
+import Link from "@material-ui/core/Link"
 import Typography from "@material-ui/core/Typography"
 import IconButton from "@material-ui/core/IconButton"
 import Collapse from "@material-ui/core/Collapse"
 import ExpandMoreIcon from "../icons/ExpandMoreIcon"
 import RichText from "./RichText"
 import Section from "./Section"
+import Img from "gatsby-image"
+
+const renderImage = ({ node }) => {
+  const { childImageSharp } = node
+  return <Img fluid={childImageSharp.fluid} />
+}
 
 const styles = theme => ({
   index__date: {
@@ -16,7 +23,7 @@ const styles = theme => ({
   },
 
   index__section: {
-    marginBottom: "0.35em",
+    marginBottom: "32px",
   },
 
   index__richText: {
@@ -46,25 +53,26 @@ const styles = theme => ({
   },
 })
 
-function EmploymentSection({ classes }) {
+function EmploymentSection({ classes, data }) {
   const [fiftyline50State, setFiftyline50State] = useState(true)
   const [komodoState, setKomodoState] = useState(true)
   const [fptState, setFptState] = useState(false)
   const [citymeState, setCitymeState] = useState(false)
   const [hitchLabState, setHitchLabState] = useState(false)
+  const { diceappImages, atomicdexImages } = data
 
   return (
     <Section color>
-      <Typography variant="h5" gutterBottom>
+      <Typography variant="h5" gutterBottom className={classes.index__section}>
         Employment
       </Typography>
       <RichText className={classes.index__section}>
         <header className={classes.index__header}>
           <Typography variant="h6">
             Founder at{" "}
-            <a href="http://www.fiftyline.com" target="blank">
+            <Link href="http://www.fiftyline.com" target="blank">
               @fiftyline50
-            </a>
+            </Link>
           </Typography>
           <time className={classes.index__date}>02/2018 - present</time>
           <IconButton
@@ -84,18 +92,18 @@ function EmploymentSection({ classes }) {
             gutterBottom
             className={classes.index__richText}
           >
-            <a href="http://www.fiftyline.com" target="blank">
+            <Link href="http://www.fiftyline.com" target="blank">
               Fiftyline
-            </a>{" "}
+            </Link>{" "}
             is the easy-to-use cryptocurrency portfolio management platform. We
             provide the service that help you to keep track of all your
             cryptocurrency investments, get the latest coin prices, news and
             some special reports.
             <br />
             Visit the website:{" "}
-            <a href="http://www.fiftyline.com" target="blank">
+            <Link href="http://www.fiftyline.com" target="blank">
               www.fiftyline.com
-            </a>
+            </Link>
           </Typography>
         </Collapse>
       </RichText>
@@ -104,9 +112,9 @@ function EmploymentSection({ classes }) {
         <header className={classes.index__header}>
           <Typography variant="h6">Fullstack Developer</Typography>
           <time className={classes.index__date}>
-            <a href="https://komodoplatform.com" target="blank">
+            <Link href="https://komodoplatform.com" target="blank">
               Komodo Platform
-            </a>
+            </Link>
             , Remote Developer - 08/2018 - 03/2019
           </time>
           <IconButton
@@ -146,9 +154,10 @@ function EmploymentSection({ classes }) {
                 gutterBottom
                 className={classes.index__richText}
               >
-                Dice Application: An instant exchange built on top of BarterDEX
-                swap. It is inspired by Changelly and ShapeShift.
+                Dice Application: This is a virtual dice app for Dice Smart
+                Contracts.
               </Typography>
+              {diceappImages && diceappImages.edges.map(renderImage)}
             </li>
             <li>
               <Typography
@@ -156,9 +165,10 @@ function EmploymentSection({ classes }) {
                 gutterBottom
                 className={classes.index__richText}
               >
-                Atomicdex Application: This is a virtual dice app for Dice Smart
-                Contracts.
+                Atomicdex Application: An instant exchange built on top of
+                BarterDEX swap. It is inspired by Changelly and ShapeShift.
               </Typography>
+              {atomicdexImages && atomicdexImages.edges.map(renderImage)}
             </li>
           </ul>
         </Collapse>
@@ -168,9 +178,9 @@ function EmploymentSection({ classes }) {
         <header className={classes.index__header}>
           <Typography variant="h6">Technical Consultant</Typography>
           <time className={classes.index__date}>
-            <a href="https://www.fpt-software.com" target="blank">
+            <Link href="https://www.fpt-software.com" target="blank">
               FPT Software
-            </a>
+            </Link>
             , Ha Noi, Viet Nam - 10/2016 - 03/2017
           </time>
           <IconButton
@@ -190,30 +200,82 @@ function EmploymentSection({ classes }) {
             gutterBottom
             className={classes.index__richText}
           >
-            <a href="https://www.fpt-software.com" target="blank">
+            <Link href="https://www.fpt-software.com" target="blank">
               Fsoft
-            </a>{" "}
+            </Link>{" "}
             is Vietnam’s largest and one of the fastest growing software
             outsourcing companies.
             <br />
             As a Technical Consultant, my responsibilities are:
-            <ul>
-              <li>Interview and hire JS developers</li>
-              <li>Train the team about react and nodejs</li>
-              <li>
+          </Typography>
+          <ul>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Interview and hire JS developers
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Train the team about react and nodejs
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
                 Work with devops team to set up infrastructure for a customer
-                <ul>
-                  <li>Setup mongodb for staging and production environment</li>
-                  <li>
+              </Typography>
+              <ul>
+                <li>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.index__richText}
+                  >
+                    Setup mongodb for staging and production environment
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.index__richText}
+                  >
                     Use Troposphere, Ansible to create and run infrastructure on
                     AWS
-                  </li>
-                  <li>Deploy application on staging environment ...</li>
-                </ul>
-              </li>
-              <li>Work with core team to design database for some service</li>
-            </ul>
-          </Typography>
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.index__richText}
+                  >
+                    Deploy application on staging environment ...
+                  </Typography>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Work with core team to design database for some service
+              </Typography>
+            </li>
+          </ul>
         </Collapse>
       </RichText>
 
@@ -245,23 +307,67 @@ function EmploymentSection({ classes }) {
             experiences with friends and community.
             <br />
             As a Fullstack and Devops engineer, my responsibilities are:
-            <ul>
-              <li>
-                Built biz manager service to help the shop manage their deals :
-                <ul>
-                  <li>Designed and implemented RESTful APIs</li>
-                  <li>Worked with React and Flux related stack</li>
-                  <li>Setup TDD approach</li>
-                </ul>
-              </li>
-              <li>Built media service with nodejs, s3, cloudfront</li>
-              <li>
+          </Typography>
+          <ul>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Built biz manager service to help the shop manage their deals:
+              </Typography>
+              <ul>
+                <li>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.index__richText}
+                  >
+                    Designed and implemented RESTful APIs
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.index__richText}
+                  >
+                    Worked with React and Flux related stack
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    variant="body1"
+                    gutterBottom
+                    className={classes.index__richText}
+                  >
+                    Setup TDD approach
+                  </Typography>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Built media service with nodejs, s3, cloudfront
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
                 Setup deployment pipeline for Production environment, work with
                 many modern technologies like Jenkins, AWS (EC2, ELB), Docker
                 ...
-              </li>
-            </ul>
-          </Typography>
+              </Typography>
+            </li>
+          </ul>
         </Collapse>
       </RichText>
 
@@ -294,19 +400,41 @@ function EmploymentSection({ classes }) {
             worked on some projects:
             <br />
             Home Game: An open house app for real estate agents
-            <ul>
-              <li>Stack: Nodejs/Meteor/Mongodb/Cordova</li>
-            </ul>
+          </Typography>
+          <ul>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Stack: Nodejs/Meteor/Mongodb/Cordova
+              </Typography>
+            </li>
+          </ul>
+          <Typography
+            variant="body1"
+            gutterBottom
+            className={classes.index__richText}
+          >
             Suitor: Find people you're interested in nearby and meetup as
             friends or something more
-            <ul>
-              <li>Stack : Nodejs/Meteor/Mongodb/Cordova</li>
-            </ul>
           </Typography>
+          <ul>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Stack : Nodejs/Meteor/Mongodb/Cordova
+              </Typography>
+            </li>
+          </ul>
         </Collapse>
       </RichText>
 
-      <RichText className={classes.index__section}>
+      <RichText>
         <header>
           <Typography variant="h6">Freelancer</Typography>
           <time className={classes.index__date}>08/2011–07/2012</time>

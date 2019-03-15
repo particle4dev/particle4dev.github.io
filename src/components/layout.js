@@ -11,7 +11,7 @@ import { StaticQuery, graphql } from "gatsby"
 import { withStyles } from "@material-ui/core/styles"
 import { MuiThemeProvider } from "@material-ui/core/styles"
 import CssBaseline from "@material-ui/core/CssBaseline"
-import Header from "./header"
+// import Header from "./header"
 import theme from "./theme"
 import "./layout.css"
 
