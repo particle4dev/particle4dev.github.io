@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { StaticQuery, graphql } from "gatsby"
 import ClassNames from "classnames"
 import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
@@ -8,65 +7,11 @@ import Collapse from "@material-ui/core/Collapse"
 import ExpandMoreIcon from "../icons/ExpandMoreIcon"
 import RichText from "./RichText"
 import Section from "./Section"
-
 import Img from "gatsby-image"
-import GridList from "@material-ui/core/GridList"
-import GridListTile from "@material-ui/core/GridListTile"
-const tileData = [
-  {
-    img: "https://material-ui.com/static/images/grid-list/breakfast.jpg",
-    title: "Breakfast",
-    author: "jill111",
-    cols: 2,
-    featured: true,
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/burgers.jpg",
-    title: "Tasty burger",
-    author: "director90",
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/camera.jpg",
-    title: "Camera",
-    author: "Danson67",
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/morning.jpg",
-    title: "Morning",
-    author: "fancycrave1",
-    featured: true,
-  },
-  {
-    img: "https://material-ui.com/static/images/grid-list/hats.jpg",
-    title: "Hats",
-    author: "Hans",
-  },
-]
 
-const atomicdexQuery = graphql`
-  query {
-    images: allFile(filter: { name: { regex: "/^atomicdex/" } }) {
-      edges {
-        node {
-          relativePath
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`
 const renderImage = ({ node }) => {
-  console.log(node)
   const { childImageSharp } = node
-  return (
-    <GridListTile key={node.relativePath}>
-      <Img fluid={childImageSharp.fluid} />
-    </GridListTile>
-  )
+  return <Img fluid={childImageSharp.fluid} />
 }
 
 const styles = theme => ({
@@ -107,12 +52,13 @@ const styles = theme => ({
   },
 })
 
-function EmploymentSection({ classes }) {
+function EmploymentSection({ classes, data }) {
   const [fiftyline50State, setFiftyline50State] = useState(true)
   const [komodoState, setKomodoState] = useState(true)
   const [fptState, setFptState] = useState(false)
   const [citymeState, setCitymeState] = useState(false)
   const [hitchLabState, setHitchLabState] = useState(false)
+  const { diceappImages, atomicdexImages } = data
 
   return (
     <Section color>
@@ -210,6 +156,7 @@ function EmploymentSection({ classes }) {
                 Dice Application: This is a virtual dice app for Dice Smart
                 Contracts.
               </Typography>
+              {diceappImages && diceappImages.edges.map(renderImage)}
             </li>
             <li>
               <Typography
@@ -220,12 +167,7 @@ function EmploymentSection({ classes }) {
                 Atomicdex Application: An instant exchange built on top of
                 BarterDEX swap. It is inspired by Changelly and ShapeShift.
               </Typography>
-              <GridList cols={3}>
-                <StaticQuery
-                  query={atomicdexQuery}
-                  render={data => data.images.edges.map(renderImage)}
-                />
-              </GridList>
+              {atomicdexImages && atomicdexImages.edges.map(renderImage)}
             </li>
           </ul>
         </Collapse>
@@ -491,7 +433,7 @@ function EmploymentSection({ classes }) {
         </Collapse>
       </RichText>
 
-      <RichText className={classes.index__section}>
+      <RichText>
         <header>
           <Typography variant="h6">Freelancer</Typography>
           <time className={classes.index__date}>08/2011–07/2012</time>

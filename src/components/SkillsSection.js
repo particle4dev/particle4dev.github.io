@@ -90,7 +90,7 @@ function SkillsSection({ classes }) {
         </div>
       </RichText>
 
-      <RichText className={classes.index__section}>
+      <RichText>
         <Typography variant="h6">OTHER SKILLS</Typography>
         <div className={classes.index__date}>
           Git, Cordova, Nginx, Digitalocean (Deployment and Configuration),

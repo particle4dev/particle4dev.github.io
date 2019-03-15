@@ -47,7 +47,7 @@ function EducationSection({ classes }) {
           MongoDB University - 10/2013 - 12/2013 (2 months)
         </time>
       </RichText>
-      <RichText className={classes.index__section}>
+      <RichText>
         <Typography variant="h6">
           M202: MongoDB Advanced Deployment and Operations
         </Typography>

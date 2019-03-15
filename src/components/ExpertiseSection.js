@@ -26,7 +26,7 @@ function ExpertiseSection({ classes }) {
       <Typography variant="h5" gutterBottom className={classes.index__section}>
         Expertise
       </Typography>
-      <RichText className={classes.index__section}>
+      <RichText>
         <Chip
           label="Javascript"
           onClick={handleClick}
