@@ -3,6 +3,7 @@ import ClassNames from "classnames"
 import Typography from "@material-ui/core/Typography"
 import { withStyles } from "@material-ui/core/styles"
 import Section from "./Section"
+import HeaderSection from "./HeaderSection"
 
 const styles = theme => ({
   index__date: {
@@ -26,10 +27,8 @@ const styles = theme => ({
 
 function SpeakingSection({ classes }) {
   return (
-    <Section>
-      <Typography variant="h5" gutterBottom>
-        Speaking
-      </Typography>
+    <Section color>
+      <HeaderSection title="Speaking" />
       <div
         className={ClassNames(classes.index__section, classes.index__richText)}
       >

@@ -5,12 +5,9 @@ import Typography from "@material-ui/core/Typography"
 import Chip from "@material-ui/core/Chip"
 import RichText from "./RichText"
 import Section from "./Section"
+import HeaderSection from "./HeaderSection"
 
 const styles = theme => ({
-  index__section: {
-    marginBottom: "32px",
-  },
-
   index__chip: {
     margin: theme.spacing.unit,
   },
@@ -23,9 +20,7 @@ function ExpertiseSection({ classes }) {
   }
   return (
     <Section>
-      <Typography variant="h5" gutterBottom className={classes.index__section}>
-        Expertise
-      </Typography>
+      <HeaderSection title="Expertise" />
       <RichText>
         <Chip
           label="Javascript"

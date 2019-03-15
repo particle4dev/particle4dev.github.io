@@ -1,8 +1,8 @@
 import React from "react"
 import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
-import RichText from "./RichText"
 import Section from "./Section"
+import HeaderSection from "./HeaderSection"
 
 const styles = theme => ({
   index: {
@@ -14,16 +14,16 @@ const styles = theme => ({
 
 function OrganizationsSection({ classes }) {
   return (
-    <Section color>
-      <Typography variant="h5" gutterBottom>
-        Organizations
-      </Typography>
+    <Section>
+      <HeaderSection title="Organizations" />
+
       <Typography variant="body1" gutterBottom>
-        <p>
-          Admin at React VietNam Group where are largest and active ReactJS
-          community in Vietnam.
-        </p>
-        <p>Member of nodejs.org</p>
+        Admin at React VietNam Group where are largest and active ReactJS
+        community in Vietnam.
+      </Typography>
+
+      <Typography variant="body1" gutterBottom>
+        Member of nodejs.org
       </Typography>
     </Section>
   )

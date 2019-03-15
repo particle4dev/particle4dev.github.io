@@ -1,7 +1,6 @@
 import React from "react"
 // import { Link } from "gatsby"
 import { graphql } from "gatsby"
-import { withStyles } from "@material-ui/core/styles"
 import AboutSection from "../components/AboutSection"
 import ExpertiseSection from "../components/ExpertiseSection"
 import EducationSection from "../components/EducationSection"
@@ -52,9 +51,9 @@ const IndexPage = ({ classes, data }) => (
     <EmploymentSection data={data} />
     <EducationSection />
     <SkillsSection />
+    <OpensourceSection />
     <SpeakingSection />
     <OrganizationsSection />
-    <OpensourceSection />
     <InterestsSection />
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
@@ -64,3 +63,4 @@ const IndexPage = ({ classes, data }) => (
 )
 
 export default IndexPage
+// update skills, speaking, organizations, interests section
