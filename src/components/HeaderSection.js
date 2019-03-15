@@ -1,4 +1,5 @@
 import React, { memo } from "react"
+import ClassNames from "classnames"
 import PropTypes from "prop-types"
 import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
@@ -11,7 +12,11 @@ const styles = theme => ({
 
 function HeaderSection({ classes, title, className }) {
   return (
-    <Typography variant="h5" gutterBottom className={classes.index__section}>
+    <Typography
+      variant="h5"
+      gutterBottom
+      className={ClassNames(classes.index__section, className)}
+    >
       {title}
     </Typography>
   )
