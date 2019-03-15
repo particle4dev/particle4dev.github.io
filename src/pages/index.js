@@ -44,26 +44,23 @@ export const query = graphql`
   }
 `
 
-const IndexPage = ({ classes, data }) => {
-  console.log(data, "IndexPage")
-  return (
-    <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <AboutSection />
-      <ExpertiseSection />
-      <EmploymentSection data={data} />
-      <EducationSection />
-      <SkillsSection />
-      <SpeakingSection />
-      <OrganizationsSection />
-      <OpensourceSection />
-      <InterestsSection />
-      {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+const IndexPage = ({ classes, data }) => (
+  <Layout>
+    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <AboutSection />
+    <ExpertiseSection />
+    <EmploymentSection data={data} />
+    <EducationSection />
+    <SkillsSection />
+    <SpeakingSection />
+    <OrganizationsSection />
+    <OpensourceSection />
+    <InterestsSection />
+    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link> */}
-    </Layout>
-  )
-}
+  </Layout>
+)
 
 export default IndexPage
