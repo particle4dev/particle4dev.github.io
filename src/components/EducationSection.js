@@ -3,6 +3,7 @@ import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
 import RichText from "./RichText"
 import Section from "./Section"
+import HeaderSection from "./HeaderSection"
 
 const styles = theme => ({
   index__date: {
@@ -21,9 +22,7 @@ const styles = theme => ({
 function EducationSection({ classes }) {
   return (
     <Section>
-      <Typography variant="h5" gutterBottom className={classes.index__section}>
-        Education
-      </Typography>
+      <HeaderSection title="Education" />
       <RichText className={classes.index__section}>
         <Typography variant="h6">
           Bachelors of Information Technology

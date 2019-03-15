@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import ClassNames from "classnames"
+import Img from "gatsby-image"
 import { withStyles } from "@material-ui/core/styles"
 import Link from "@material-ui/core/Link"
 import Typography from "@material-ui/core/Typography"
@@ -8,11 +9,11 @@ import Collapse from "@material-ui/core/Collapse"
 import ExpandMoreIcon from "../icons/ExpandMoreIcon"
 import RichText from "./RichText"
 import Section from "./Section"
-import Img from "gatsby-image"
+import HeaderSection from "./HeaderSection"
 
 const renderImage = ({ node }) => {
   const { childImageSharp } = node
-  return <Img fluid={childImageSharp.fluid} />
+  return <Img key={node.relativePath} fluid={childImageSharp.fluid} />
 }
 
 const styles = theme => ({
@@ -63,9 +64,7 @@ function EmploymentSection({ classes, data }) {
 
   return (
     <Section color>
-      <Typography variant="h5" gutterBottom className={classes.index__section}>
-        Employment
-      </Typography>
+      <HeaderSection title="Employment" />
       <RichText className={classes.index__section}>
         <header className={classes.index__header}>
           <Typography variant="h6">
