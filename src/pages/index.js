@@ -64,3 +64,4 @@ const IndexPage = ({ classes, data }) => (
 )
 
 export default IndexPage
+// update skills, speaking, organizations, opensource, interests section
