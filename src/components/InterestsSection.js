@@ -1,4 +1,5 @@
 import React from "react"
+import ClassNames from "classnames"
 import { withStyles } from "@material-ui/core/styles"
 import RichText from "./RichText"
 import Section from "./Section"
@@ -18,10 +19,10 @@ function InterestsSection({ classes }) {
   return (
     <Section color>
       <HeaderSection title="Interests" />
-      <RichText className={classes.index__section}>
-        <time className={classes.index__date}>
-          Hacking, learning new thing, travelling and hangout with my friends :)
-        </time>
+      <RichText
+        className={ClassNames(classes.index__section, classes.index__date)}
+      >
+        Hacking, learning new thing, travelling and hangout with my friends :)
       </RichText>
     </Section>
   )
