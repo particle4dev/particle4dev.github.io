@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import ClassNames from "classnames"
 import { withStyles } from "@material-ui/core/styles"
+import Link from "@material-ui/core/Link"
 import Typography from "@material-ui/core/Typography"
 import IconButton from "@material-ui/core/IconButton"
 import Collapse from "@material-ui/core/Collapse"
@@ -69,9 +70,9 @@ function EmploymentSection({ classes, data }) {
         <header className={classes.index__header}>
           <Typography variant="h6">
             Founder at{" "}
-            <a href="http://www.fiftyline.com" target="blank">
+            <Link href="http://www.fiftyline.com" target="blank">
               @fiftyline50
-            </a>
+            </Link>
           </Typography>
           <time className={classes.index__date}>02/2018 - present</time>
           <IconButton
@@ -91,18 +92,18 @@ function EmploymentSection({ classes, data }) {
             gutterBottom
             className={classes.index__richText}
           >
-            <a href="http://www.fiftyline.com" target="blank">
+            <Link href="http://www.fiftyline.com" target="blank">
               Fiftyline
-            </a>{" "}
+            </Link>{" "}
             is the easy-to-use cryptocurrency portfolio management platform. We
             provide the service that help you to keep track of all your
             cryptocurrency investments, get the latest coin prices, news and
             some special reports.
             <br />
             Visit the website:{" "}
-            <a href="http://www.fiftyline.com" target="blank">
+            <Link href="http://www.fiftyline.com" target="blank">
               www.fiftyline.com
-            </a>
+            </Link>
           </Typography>
         </Collapse>
       </RichText>
@@ -111,9 +112,9 @@ function EmploymentSection({ classes, data }) {
         <header className={classes.index__header}>
           <Typography variant="h6">Fullstack Developer</Typography>
           <time className={classes.index__date}>
-            <a href="https://komodoplatform.com" target="blank">
+            <Link href="https://komodoplatform.com" target="blank">
               Komodo Platform
-            </a>
+            </Link>
             , Remote Developer - 08/2018 - 03/2019
           </time>
           <IconButton
@@ -177,9 +178,9 @@ function EmploymentSection({ classes, data }) {
         <header className={classes.index__header}>
           <Typography variant="h6">Technical Consultant</Typography>
           <time className={classes.index__date}>
-            <a href="https://www.fpt-software.com" target="blank">
+            <Link href="https://www.fpt-software.com" target="blank">
               FPT Software
-            </a>
+            </Link>
             , Ha Noi, Viet Nam - 10/2016 - 03/2017
           </time>
           <IconButton
@@ -199,9 +200,9 @@ function EmploymentSection({ classes, data }) {
             gutterBottom
             className={classes.index__richText}
           >
-            <a href="https://www.fpt-software.com" target="blank">
+            <Link href="https://www.fpt-software.com" target="blank">
               Fsoft
-            </a>{" "}
+            </Link>{" "}
             is Vietnam’s largest and one of the fastest growing software
             outsourcing companies.
             <br />
