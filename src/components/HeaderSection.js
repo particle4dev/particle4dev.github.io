@@ -10,11 +10,12 @@ const styles = theme => ({
   },
 })
 
-function HeaderSection({ classes, title, className }) {
+function HeaderSection({ classes, id, title, className }) {
   return (
     <Typography
       variant="h5"
       gutterBottom
+      id={id}
       className={ClassNames(classes.index__section, className)}
     >
       {title}
@@ -25,10 +26,12 @@ function HeaderSection({ classes, title, className }) {
 HeaderSection.propTypes = {
   title: PropTypes.string.isRequired,
   className: PropTypes.string,
+  id: PropTypes.string,
 }
 
 HeaderSection.defaultProps = {
   className: "",
+  id: null
 }
 
 export default memo(withStyles(styles)(HeaderSection))

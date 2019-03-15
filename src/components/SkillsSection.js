@@ -22,7 +22,7 @@ const styles = theme => ({
 function SkillsSection({ classes }) {
   return (
     <Section color>
-      <HeaderSection title="Programming Skills" />
+      <HeaderSection id="skills-section" title="Programming Skills" />
       <RichText className={classes.index__section}>
         <Typography variant="h6" gutterBottom>
           Software engineering && devops && Scrum master
