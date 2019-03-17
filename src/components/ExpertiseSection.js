@@ -1,7 +1,6 @@
 import React from "react"
 import { navigate } from "gatsby"
 import { withStyles } from "@material-ui/core/styles"
-import Typography from "@material-ui/core/Typography"
 import Chip from "@material-ui/core/Chip"
 import RichText from "./RichText"
 import Section from "./Section"

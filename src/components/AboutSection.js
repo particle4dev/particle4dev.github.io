@@ -15,9 +15,11 @@ import MailIcon from "../icons/MailIcon"
 import Section from "./Section"
 
 const styles = theme => ({
+
   index__richText: {
     lineHeight: "34px",
   },
+
 })
 
 function AboutSection({ classes }) {
@@ -27,12 +29,12 @@ function AboutSection({ classes }) {
         Nam Hoang
       </Typography>
       <Typography
-        variant="subtitle1"
+        variant="button"
         gutterBottom
         className={classes.index__richText}
       >
         Software engineer / DevOps / Open source / Scrum Master / who love to
-        build a great product.
+        build a great product
       </Typography>
       <Typography
         variant="body1"
@@ -85,9 +87,6 @@ function AboutSection({ classes }) {
           item
           xs={12}
           sm={6}
-          style={{
-            padding: "0px 12px",
-          }}
         >
           <List dense>
             <ListItem disableGutters>
