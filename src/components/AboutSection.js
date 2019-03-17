@@ -15,11 +15,9 @@ import MailIcon from "../icons/MailIcon"
 import Section from "./Section"
 
 const styles = theme => ({
-
   index__richText: {
     lineHeight: "34px",
   },
-
 })
 
 function AboutSection({ classes }) {
@@ -83,11 +81,7 @@ function AboutSection({ classes }) {
             </ListItem>
           </List>
         </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={6}
-        >
+        <Grid item xs={12} sm={6}>
           <List dense>
             <ListItem disableGutters>
               <ListItemIcon>

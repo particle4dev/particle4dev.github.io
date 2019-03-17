@@ -32,26 +32,15 @@ function EducationSection({ classes }) {
           09/2008 - 02/2013
         </time>
       </RichText>
-      <RichText className={classes.index__section}>
-        <Typography variant="h6">M102: MongoDB for DBAs</Typography>
-        <time className={classes.index__date}>
-          MongoDB University - 07/2013 - 09/2013 (2 months)
-        </time>
-      </RichText>
-      <RichText className={classes.index__section}>
-        <Typography variant="h6">
-          M101JS: MongoDB for Node.js Developers
-        </Typography>
-        <time className={classes.index__date}>
-          MongoDB University - 10/2013 - 12/2013 (2 months)
-        </time>
-      </RichText>
       <RichText>
-        <Typography variant="h6">
-          M202: MongoDB Advanced Deployment and Operations
-        </Typography>
+        <Typography variant="h6">MongoDB University</Typography>
         <time className={classes.index__date}>
-          MongoDB University - 03/2016 - 05/2016 (2 months)
+          M102 MongoDB for DBAs - 07/2013 - 09/2013 (2 months)
+          <br />
+          M101JS MongoDB for Node.js Developers - 10/2013 - 12/2013 (2 months)
+          <br />
+          M202 MongoDB Advanced Deployment and Operations - 03/2016 - 05/2016 (2
+          months)
         </time>
       </RichText>
     </Section>

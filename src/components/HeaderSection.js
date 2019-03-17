@@ -31,7 +31,7 @@ HeaderSection.propTypes = {
 
 HeaderSection.defaultProps = {
   className: "",
-  id: null
+  id: null,
 }
 
 export default memo(withStyles(styles)(HeaderSection))

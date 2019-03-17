@@ -434,10 +434,8 @@ function EmploymentSection({ classes, data }) {
       </RichText>
 
       <RichText>
-        <header>
-          <Typography variant="h6">Freelancer</Typography>
-          <time className={classes.index__date}>08/2011–07/2012</time>
-        </header>
+        <Typography variant="h6">Freelancer</Typography>
+        <time className={classes.index__date}>08/2011–07/2012</time>
       </RichText>
     </Section>
   )

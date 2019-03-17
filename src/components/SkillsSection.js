@@ -31,7 +31,7 @@ function SkillsSection({ classes }) {
 
       <RichText className={classes.index__section}>
         <Typography variant="h6">
-          Product Development Process: Scrum, Agile
+          Product Development Process: Scrum, Agile, Tdd / Bdd
         </Typography>
         <div className={classes.index__date}>Tools: pivotaltracker, trello</div>
       </RichText>
@@ -48,17 +48,33 @@ function SkillsSection({ classes }) {
         <div className={classes.index__date}>
           Proficient: JS/Node.js
           <br />
-          Familiar with: Php, Java
+          Currently learning: Go, Rust, Python
           <br />
-          Currently learning: Go, Python
+          Familiar with: Php, Java
         </div>
       </RichText>
 
       <RichText className={classes.index__section}>
-        <Typography variant="h6">AWS</Typography>
+        <Typography variant="h6">Database</Typography>
         <div className={classes.index__date}>
-          ECS, ALB, EC2, ELB, Cloudfront, VPC, S3, Redshift, Route53, Serverless
-          (Api Gateway, Lambda), IAM
+          Mongodb, InfluxData, Redis, Postgresql, Mysql
+        </div>
+      </RichText>
+
+      <RichText className={classes.index__section}>
+        <Typography variant="h6">Cloud Computing Platforms</Typography>
+        <div className={classes.index__date}>
+          AWS: ECS, ALB, EC2, ELB, Cloudfront, VPC, S3, Redshift, Route53,
+          Serverless (Api Gateway, Lambda), IAM
+          <br />
+          Digitalocean (Deployment and Configuration)
+        </div>
+      </RichText>
+
+      <RichText className={classes.index__section}>
+        <Typography variant="h6">IDE</Typography>
+        <div className={classes.index__date}>
+          Sublime Text, Vim, Visual Studio
         </div>
       </RichText>
 
@@ -76,18 +92,10 @@ function SkillsSection({ classes }) {
         </div>
       </RichText>
 
-      <RichText className={classes.index__section}>
-        <Typography variant="h6">Database</Typography>
-        <div className={classes.index__date}>
-          Mongodb, InfluxData, Redis, Postgresql, Mysql
-        </div>
-      </RichText>
-
       <RichText>
         <Typography variant="h6">OTHER SKILLS</Typography>
         <div className={classes.index__date}>
-          Git, Cordova, Nginx, Digitalocean (Deployment and Configuration),
-          RESTful API Implementation, Css & Sass & Smacss, Tdd / Bdd, Sublime
+          Cordova, Nginx, RESTful API Implementation, Css & Sass & Smacss
         </div>
       </RichText>
     </Section>
