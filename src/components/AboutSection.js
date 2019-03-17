@@ -76,7 +76,7 @@ function AboutSection({ classes }) {
                 <GithubIcon />
               </ListItemIcon>
               <Link href="https://github.com/particle4dev" target="blank">
-                https://github.com/particle4dev
+                github.com/particle4dev
               </Link>
             </ListItem>
           </List>
@@ -95,7 +95,7 @@ function AboutSection({ classes }) {
                 <TwitterIcon />
               </ListItemIcon>
               <Link href="https://twitter.com/particle4dev" target="blank">
-                https://twitter.com/particle4dev
+                twitter.com/particle4dev
               </Link>
             </ListItem>
             <ListItem disableGutters>
@@ -103,7 +103,7 @@ function AboutSection({ classes }) {
                 <FacebookIcon />
               </ListItemIcon>
               <Link href="https://www.facebook.com/namhoang28" target="blank">
-                https://www.facebook.com/namhoang28
+                facebook.com/namhoang28
               </Link>
             </ListItem>
             <ListItem disableGutters>
@@ -114,7 +114,7 @@ function AboutSection({ classes }) {
                 href="https://www.linkedin.com/in/hoang-van-nam-25a30612a"
                 target="blank"
               >
-                https://www.linkedin.com/in/hoang-van-nam-25a30612a{" "}
+                linkedin.com/in/hoang-van-nam-25a30612a
               </Link>
             </ListItem>
           </List>

@@ -79,7 +79,7 @@ function SkillsSection({ classes }) {
       <RichText className={classes.index__section}>
         <Typography variant="h6">Database</Typography>
         <div className={classes.index__date}>
-          Mongodb, InfluxData, Redis, Mysql, Postgresql
+          Mongodb, InfluxData, Redis, Postgresql, Mysql
         </div>
       </RichText>
 
