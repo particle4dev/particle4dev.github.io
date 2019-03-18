@@ -45,7 +45,10 @@ export const query = graphql`
 
 const IndexPage = ({ classes, data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`resume`, `nam`, `hoang`, `personal`, `website`]} />
+    <SEO
+      title="Home"
+      keywords={[`resume`, `nam`, `hoang`, `personal`, `website`]}
+    />
     <AboutSection />
     <ExpertiseSection />
     <EmploymentSection data={data} />

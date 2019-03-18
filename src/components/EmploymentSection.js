@@ -155,6 +155,9 @@ function EmploymentSection({ classes, data }) {
               >
                 Dice Application: This is a virtual dice app for Dice Smart
                 Contracts.
+                <ul>
+                  <li>Stack: Reactjs/Redux/Electronjs/Material UI</li>
+                </ul>
               </Typography>
               {diceappImages && diceappImages.edges.map(renderImage)}
             </li>
@@ -166,6 +169,9 @@ function EmploymentSection({ classes, data }) {
               >
                 Atomicdex Application: An instant exchange built on top of
                 BarterDEX swap. It is inspired by Changelly and ShapeShift.
+                <ul>
+                  <li>Stack: Reactjs/Redux/Electronjs/Material UI</li>
+                </ul>
               </Typography>
               {atomicdexImages && atomicdexImages.edges.map(renderImage)}
             </li>

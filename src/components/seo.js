@@ -87,9 +87,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,500|Google+Sans:300,400|Material+Icons|Google+Sans+Display:400,500"
         rel="stylesheet"
       />
-      <title>
-        Nam Hoang
-      </title>
+      <title>Nam Hoang</title>
     </Helmet>
   )
 }

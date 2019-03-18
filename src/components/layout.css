@@ -38,6 +38,5 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
 }
 
 ul {
-  list-style: disc;
   margin-left: 16px;
 }

@@ -55,6 +55,20 @@ function SkillsSection({ classes }) {
       </RichText>
 
       <RichText className={classes.index__section}>
+        <Typography variant="h6">UI Technologies</Typography>
+        <div className={classes.index__date}>
+          DHTML, Ajax, jQuery, Meteor, ReactJS and ReactJS ecosystem
+        </div>
+      </RichText>
+
+      <RichText className={classes.index__section}>
+        <Typography variant="h6">Web servers & App servers</Typography>
+        <div className={classes.index__date}>
+          Apache, Nginx, ExpressJS, FeatherJS, Meteor, Restify
+        </div>
+      </RichText>
+
+      <RichText className={classes.index__section}>
         <Typography variant="h6">Database</Typography>
         <div className={classes.index__date}>
           Mongodb, InfluxData, Redis, Postgresql, Mysql
@@ -95,7 +109,7 @@ function SkillsSection({ classes }) {
       <RichText>
         <Typography variant="h6">OTHER SKILLS</Typography>
         <div className={classes.index__date}>
-          Cordova, Nginx, RESTful API Implementation, Css & Sass & Smacss
+          Cordova, RESTful API Implementation, Css & Sass & Smacss
         </div>
       </RichText>
     </Section>
