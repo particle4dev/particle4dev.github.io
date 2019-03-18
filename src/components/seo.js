@@ -88,7 +88,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         rel="stylesheet"
       />
       <title>
-        Nam Hoang - Software engineer/DevOps/Open source/Scrum Master
+        Nam Hoang
       </title>
     </Helmet>
   )
