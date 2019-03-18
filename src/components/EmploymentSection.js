@@ -134,7 +134,7 @@ function EmploymentSection({ classes, data }) {
             className={classes.index__richText}
           >
             As a Fullstack Developer, I worked on some decentralized
-            applications with Komodo technologies:
+            applications built on top of Komodo technologies:
           </Typography>
           <ul>
             <li>
