@@ -5,9 +5,9 @@ import { withStyles } from "@material-ui/core/styles"
 
 const styles = theme => ({
   index__date: {
-    fontFamily: 'Roboto Mono',
+    fontFamily: "Roboto Mono",
     fontSize: 16,
-    color: '#5f6368'
+    color: "#5f6368",
   },
 })
 

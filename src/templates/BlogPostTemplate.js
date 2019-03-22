@@ -1,40 +1,55 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
+import Typography from "@material-ui/core/Typography"
+import { withStyles } from "@material-ui/core/styles"
 // import Bio from "../components/bio"
+import AboutSection from "../components/AboutSection"
 import Layout from "../components/layout"
 import Section from "../components/Section"
 import SEO from "../components/seo"
-// import { rhythm, scale } from "../utils/typography"
+import Date from "../components/Date"
+
+const styles = theme => ({
+  index__item: {
+    marginBottom: 32,
+  },
+  index__headline: {
+    marginTop: 9,
+  },
+  index__richText: {
+    lineHeight: "34px",
+  },
+})
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+    const { classes, pageContext } = this.props
+    const { previous, next } = pageContext
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <Section color>
+        <AboutSection />
+        <Section>
           <SEO
             title={post.frontmatter.title}
             description={post.frontmatter.description || post.excerpt}
           />
-          <h1>{post.frontmatter.title}</h1>
-          <p
-            style={{
-              // ...scale(-1 / 5),
-              display: `block`,
-              // marginBottom: rhythm(1),
-              // marginTop: rhythm(-1),
-            }}
+          <Date>{post.frontmatter.date}</Date>
+          <Typography
+            variant="h5"
+            gutterBottom
+            className={classes.index__headline}
           >
-            {post.frontmatter.date}
-          </p>
-        </Section>
-        <Section>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          {/* <Bio /> */}
+            {post.frontmatter.title}
+          </Typography>
+          <Typography
+            variant="body1"
+            gutterBottom
+            className={classes.index__richText}
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
         </Section>
         <Section color>
           <ul
@@ -67,7 +82,7 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default BlogPostTemplate
+export default withStyles(styles)(BlogPostTemplate)
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

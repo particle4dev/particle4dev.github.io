@@ -14,8 +14,8 @@ const styles = theme => ({
     marginBottom: 32,
   },
   index__headline: {
-    marginTop: 9
-  }
+    marginTop: 9,
+  },
 })
 
 class BlogIndex extends React.Component {
@@ -26,7 +26,11 @@ class BlogIndex extends React.Component {
     return (
       <div key={node.fields.slug} className={classes.index__item}>
         <Date>{node.frontmatter.date}</Date>
-        <Typography variant="h5" gutterBottom className={classes.index__headline}>
+        <Typography
+          variant="h5"
+          gutterBottom
+          className={classes.index__headline}
+        >
           <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
             {title}
           </Link>
@@ -77,7 +81,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MM/DD/YYYY")
             title
             description
           }
