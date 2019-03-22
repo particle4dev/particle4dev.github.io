@@ -24,7 +24,7 @@ function AboutSection({ classes }) {
   return (
     <Section color>
       <Typography variant="h3" gutterBottom>
-        Nam Hoang
+        <Link to="/">Nam Hoang</Link>
       </Typography>
       <Typography
         variant="button"

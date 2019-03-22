@@ -50,6 +50,7 @@ class BlogPostTemplate extends React.Component {
             className={classes.index__richText}
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
+          {post.html}
         </Section>
         <Section color>
           <ul
