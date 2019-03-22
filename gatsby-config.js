@@ -31,6 +31,13 @@ module.exports = {
       resolve: `gatsby-plugin-material-ui`,
       options: {}, // Add any options here
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // Full documentation for the plugin can be found https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/
+        trackingId: "UA-78818002-1"
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
