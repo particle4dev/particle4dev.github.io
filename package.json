@@ -7,6 +7,7 @@
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "classnames": "^2.2.6",
+    "debug": "^4.1.1",
     "gatsby": "^2.1.27",
     "gatsby-image": "^2.0.31",
     "gatsby-plugin-google-analytics": "^2.0.17",

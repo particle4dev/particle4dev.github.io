@@ -35,8 +35,6 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    console.log(result, 'result');
-
     // Create blog posts pages.
     const posts = result.data.allMarkdownRemark.edges
 
