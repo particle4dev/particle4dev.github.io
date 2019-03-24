@@ -1,7 +1,7 @@
 import React from "react"
+import { Link } from "gatsby"
 import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
-import Link from "@material-ui/core/Link"
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemIcon from "@material-ui/core/ListItemIcon"
@@ -24,7 +24,7 @@ function AboutSection({ classes }) {
   return (
     <Section color>
       <Typography variant="h3" gutterBottom>
-        Nam Hoang
+        <Link to="/">Nam Hoang</Link>
       </Typography>
       <Typography
         variant="button"
