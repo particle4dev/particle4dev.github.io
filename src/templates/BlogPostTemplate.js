@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import rehypeReact from "rehype-react"
 import Typography from "@material-ui/core/Typography"
 import { withStyles } from "@material-ui/core/styles"
 // import Bio from "../components/bio"
@@ -20,6 +21,11 @@ const styles = theme => ({
     lineHeight: "34px",
   },
 })
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { typography: Typography },
+}).Compiler
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -44,15 +50,25 @@ class BlogPostTemplate extends React.Component {
           >
             {post.frontmatter.title}
           </Typography>
-          <Typography
+          {/* <Typography
             variant="body1"
             gutterBottom
             className={classes.index__richText}
             dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-          {post.html}
+          /> */}
+          <Typography
+            variant="body1"
+            gutterBottom
+            className={classes.index__richText}
+          >
+            {renderAst(post.htmlAst)}
+          </Typography>
         </Section>
         <Section color>
+          <Typography variant="h5" gutterBottom>
+            Related
+          </Typography>
+
           <ul
             style={{
               display: `flex`,
@@ -64,16 +80,28 @@ class BlogPostTemplate extends React.Component {
           >
             <li>
               {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
-                </Link>
+                <Typography
+                  variant="body1"
+                  gutterBottom
+                  className={classes.index__richText}
+                >
+                  <Link to={previous.fields.slug} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                </Typography>
               )}
             </li>
             <li>
               {next && (
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
+                <Typography
+                  variant="body1"
+                  gutterBottom
+                  className={classes.index__richText}
+                >
+                  <Link to={next.fields.slug} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                </Typography>
               )}
             </li>
           </ul>
@@ -96,7 +124,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
-      html
+      htmlAst # previously html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

@@ -2,6 +2,7 @@
 layout: post
 title: Why Agile doesn’t work
 tags: [computer-science]
+date: "2018-07-21T00:00:00.000Z"
 ---
 **Why Agile doesn’t work**
 
