@@ -15,12 +15,11 @@ tags: [life]
   - get AWS Certification
 
       [choosing-the-right-aws-certification](http://cloudacademy.com/blog/choosing-the-right-aws-certification)
-  
+
   - read 10 books
 
       [NoSQL for Mere Mortals](https://www.goodreads.com/book/show/23020811-nosql-for-mere-mortals)
 
-  
   - go to Singapore 🇸🇬 or Japan
   
   - start saving money 
