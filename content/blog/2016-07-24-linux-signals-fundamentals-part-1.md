@@ -1,6 +1,7 @@
 ---
-layout: post
 title: Linux Signals Fundamentals – Part I
+date: "2016-07-24T00:00:00.000Z"
+description: A robust program need to handle signals. This is because signals are a way to deliver asynchronous events to the application.
 tags: [linux]
 ---
 
@@ -10,7 +11,7 @@ A robust program need to handle signals. This is because signals are a way to de
 
 A user hitting ctrl+c, a process sending a signal to kill another process etc are all such cases where a process needs to do signal handling.
 
-## Linux Signals
+**I. Linux Signals**
 
 In Linux, every signal has a name that begins with characters SIG. For example :
 
@@ -27,7 +28,7 @@ When the signal occurs, the process has to tell the kernel what to do with it.  
 
 As we already stated that two signals SIGKILL and SIGSTOP cannot be ignored. This is because these two signals provide a way for root user or the kernel to kill or stop any process in any situation .The default action of these signals is to terminate the process. Neither these signals can be caught nor can be ignored.
 
-## What Happens at Program Start-up?
+**II. What Happens at Program Start-up?**
 
 It all depends on the process that calls exec. When the process is started the status of all the signals is either ignore or default. Its the later option that is more likely to happen unless the process that calls exec is ignoring the signals.
 
@@ -35,7 +36,7 @@ It is the property of exec functions to change the action on any signal to be th
 
 Also, Since we usually have processes running in background so the shell just sets the quit signal disposition as ignored since we do not want the background processes to get terminated by a user pressing a ctrl+c key because that defeats the purpose of making a process run in background.
 
-## Why Signal Catching Functions should be Reentrant?
+**III. Why Signal Catching Functions should be Reentrant?**
 
 As we have already discussed that one of the option for signal disposition is to catch the signal. In the process code this is done by registering a function to kernel which the kernel calls when the signal occurs. One thing to be kept in mind is that the function that the process registers should be reentrant.
 
@@ -49,7 +50,7 @@ So we say that signal catching functions should be made reentrant.
 
 Refer to our articles [send-signal-to-process](http://www.thegeekstuff.com/2011/02/send-signal-to-process/){:target="_blank"} and [Linux fuser command](http://www.thegeekstuff.com/2012/02/linux-fuser-command/){:target="_blank"} to see practical examples on how to send signals to a process.
 
-## Threads and Signals
+**IV. Threads and Signals**
 
 We already saw in the one of previous sections that signal handling comes with its own bit of complexity (like using reentrant functions) . To add on to the complexity, we usually have multi threaded applications where signal handling becomes really complicated.
 
@@ -61,6 +62,8 @@ Signals are delivered only to a single thread in any process. Apart from the the
 
 To counter this shortcoming there are some posix APIs like pthread_sigmask() etc that can be used.
 
-In the [next article (part 2)](http://www.thegeekstuff.com/2012/03/catch-signals-sample-c-code/){:target="_blank"} of this series, we will discuss about how to catch signals in a process, and explain the practical aspect of signal handling using code snippets.
+In the [next article (part 2)](http://www.thegeekstuff.com/2012/03/catch-signals-sample-c-code/) of this series, we will discuss about how to catch signals in a process, and explain the practical aspect of signal handling using code snippets.
 
-Source: [http://www.thegeekstuff.com/2012/03/linux-signals-fundamentals/](http://www.thegeekstuff.com/2012/03/linux-signals-fundamentals/){:target="_blank"}
+**V. LINK**
+
+1. [http://www.thegeekstuff.com/2012/03/linux-signals-fundamentals/](http://www.thegeekstuff.com/2012/03/linux-signals-fundamentals/)
