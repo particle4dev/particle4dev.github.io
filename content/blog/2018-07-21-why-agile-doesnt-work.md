@@ -1,20 +1,20 @@
 ---
-layout: post
 title: Why Agile doesn’t work
-tags: [computer-science]
 date: "2018-07-21T00:00:00.000Z"
+tags: [computer-science]
+description: As Scrum is the most popular in the industry by 2018, and others are not much different, with the exception of XP, I will discuss a broad view of Agile, and use specific illustration with Scrum to explain my opinion why Agile doesn’t work.
 ---
+
 **Why Agile doesn’t work**
 
 Under Agile, there are many specific methodologies: popular: Scrum, Kanban, XP, not so poplar: DSDM, FDD, ASD, Lean, Crystal. Agile Development Process supposes to achieve the following goals:
 
 * Higher productivity
-
 * Better-quality products
 * Reduced time to market
 * Improved stakeholder satisfaction
-*  Better team dynamics
-*  Happier employees
+* Better team dynamics
+* Happier employees
 
 Not quite so in the reality.
 

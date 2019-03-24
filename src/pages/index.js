@@ -2,12 +2,11 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Typography from "@material-ui/core/Typography"
 import { withStyles } from "@material-ui/core/styles"
-// import Bio from "../components/bio"
+import BioSection from "../components/BioSection"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/Section"
 import Date from "../components/Date"
-import AboutSection from "../components/AboutSection"
 
 const styles = theme => ({
   index__item: {
@@ -57,7 +56,7 @@ class BlogIndex extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <AboutSection />
+        <BioSection />
         <Section>{posts.map(this.renderNewfeedItem)}</Section>
       </Layout>
     )

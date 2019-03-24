@@ -3,8 +3,7 @@ import { Link, graphql } from "gatsby"
 import rehypeReact from "rehype-react"
 import Typography from "@material-ui/core/Typography"
 import { withStyles } from "@material-ui/core/styles"
-// import Bio from "../components/bio"
-import AboutSection from "../components/AboutSection"
+import BioSection from "../components/BioSection"
 import Layout from "../components/layout"
 import Section from "../components/Section"
 import SEO from "../components/seo"
@@ -36,7 +35,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <AboutSection />
+        <BioSection />
         <Section>
           <SEO
             title={post.frontmatter.title}
@@ -65,10 +64,6 @@ class BlogPostTemplate extends React.Component {
           </Typography>
         </Section>
         <Section color>
-          <Typography variant="h5" gutterBottom>
-            Related
-          </Typography>
-
           <ul
             style={{
               display: `flex`,
@@ -80,11 +75,7 @@ class BlogPostTemplate extends React.Component {
           >
             <li>
               {previous && (
-                <Typography
-                  variant="body1"
-                  gutterBottom
-                  className={classes.index__richText}
-                >
+                <Typography variant="body1" className={classes.index__richText}>
                   <Link to={previous.fields.slug} rel="prev">
                     ← {previous.frontmatter.title}
                   </Link>
@@ -93,11 +84,7 @@ class BlogPostTemplate extends React.Component {
             </li>
             <li>
               {next && (
-                <Typography
-                  variant="body1"
-                  gutterBottom
-                  className={classes.index__richText}
-                >
+                <Typography variant="body1" className={classes.index__richText}>
                   <Link to={next.fields.slug} rel="next">
                     {next.frontmatter.title} →
                   </Link>
