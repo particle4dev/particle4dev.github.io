@@ -172,8 +172,9 @@ function EmploymentSection({ classes, data }) {
               >
                 Atomicdex Application: An instant exchange built on top of
                 BarterDEX swap. This application is inspired by Changelly and
-                ShapeShift. My colleagues said it looks more elegant, clean and
-                easy-to-use than the old one.
+                ShapeShift and the goal is to make end-user easily accessible to
+                "Atomic Swap" technology. My colleagues said it looks more
+                elegant, clean and easy-to-use than the old one.
                 <ul>
                   <li>Stack: Reactjs / Redux / Electronjs / Material UI</li>
                 </ul>

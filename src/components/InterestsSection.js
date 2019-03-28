@@ -23,22 +23,11 @@ function InterestsSection({ classes }) {
   return (
     <Section color>
       <HeaderSection title="Interests" />
-      {/** <RichText
-        className={ClassNames(classes.index__section, classes.index__date)}
-      >
-        Hacking, learning new thing, travelling and hangout with my friends :)
-      </RichText>*/}
       <RichText className={classes.index__section}>
         <Typography variant="h6">Professional interests</Typography>
         <div className={classes.index__date}>
-          Open web standards, Cloud computing, Software development 
-
-          user experience, UI design, web development
-          education, front-end web development, API design, web accessibility,
-          technical writing, graphic design, color theory, typography,
-
-          Human-Computer Interaction, End user programming, Web architecture,
-          Social computing, Data visualization
+          Open web standards, Cloud computing, Software development, Web
+          development, Web architecture
         </div>
       </RichText>
 
