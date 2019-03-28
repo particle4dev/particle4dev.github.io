@@ -42,8 +42,7 @@ function AboutSection({ classes }) {
         I am Freelancer on weekday and Solo Startup Founder on weekend. With 8
         years of experience, I've acquired some good knowledge in a variety of
         technologies from React to AWS. Currently, I focus on web technology and
-        decentralized system. Feel free to contact me if you got a project or
-        just an idea.
+        decentralized system.
         <br />
       </Typography>
       <Grid container spacing={24}>

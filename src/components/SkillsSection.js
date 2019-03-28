@@ -23,11 +23,6 @@ function SkillsSection({ classes }) {
   return (
     <Section color>
       <HeaderSection id="skills-section" title="Programming Skills" />
-      <RichText className={classes.index__section}>
-        <Typography variant="h6" gutterBottom>
-          Software engineering && devops && Scrum master
-        </Typography>
-      </RichText>
 
       <RichText className={classes.index__section}>
         <Typography variant="h6">

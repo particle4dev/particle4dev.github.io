@@ -133,8 +133,10 @@ function EmploymentSection({ classes, data }) {
             gutterBottom
             className={classes.index__richText}
           >
-            As a Fullstack Developer, I worked on some decentralized
-            applications built on top of Komodo technologies:
+            I was hired as a Remote Fullstack Developer where I worked on some
+            decentralized applications. My main goal was to built the
+            application to make end-user easily accessible to Komodo
+            technologies. This is the list of dApp:
           </Typography>
           <ul>
             <li>
@@ -235,7 +237,7 @@ function EmploymentSection({ classes, data }) {
                 gutterBottom
                 className={classes.index__richText}
               >
-                Train the team about react and nodejs
+                Train the team about React and Nodejs
               </Typography>
             </li>
             <li>
@@ -244,7 +246,7 @@ function EmploymentSection({ classes, data }) {
                 gutterBottom
                 className={classes.index__richText}
               >
-                Work with devops team to set up infrastructure for a customer
+                Work with Devops team to set up infrastructure for a customer
               </Typography>
               <ul>
                 <li>
@@ -253,7 +255,7 @@ function EmploymentSection({ classes, data }) {
                     gutterBottom
                     className={classes.index__richText}
                   >
-                    Setup mongodb for staging and production environment
+                    Setup Mongodb for staging and production environment
                   </Typography>
                 </li>
                 <li>
