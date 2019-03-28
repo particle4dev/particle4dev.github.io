@@ -44,8 +44,6 @@ function AboutSection({ classes }) {
         AWS. I am enthusiastic about my job and excited to come in every day to
         learn and contribute.
         <br />
-        <Link href="#skills-section">Here</Link> to see a summary of the
-        technologies I've been involved with.
       </Typography>
       <Grid container spacing={24}>
         <Grid
