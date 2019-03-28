@@ -1,6 +1,7 @@
 import React from "react"
 import ClassNames from "classnames"
 import { withStyles } from "@material-ui/core/styles"
+import Typography from "@material-ui/core/Typography"
 import RichText from "./RichText"
 import Section from "./Section"
 import HeaderSection from "./HeaderSection"
@@ -13,19 +14,47 @@ const styles = theme => ({
     fontWeight: 400,
     letterSpacing: "0.00938em",
   },
+  index__section: {
+    marginBottom: "32px",
+  },
 })
 
 function InterestsSection({ classes }) {
   return (
     <Section color>
       <HeaderSection title="Interests" />
-      <RichText
+      {/** <RichText
         className={ClassNames(classes.index__section, classes.index__date)}
       >
         Hacking, learning new thing, travelling and hangout with my friends :)
+      </RichText>*/}
+      <RichText className={classes.index__section}>
+        <Typography variant="h6">Professional interests</Typography>
+        <div className={classes.index__date}>
+          Open web standards, Cloud computing, Software development 
+
+          user experience, UI design, web development
+          education, front-end web development, API design, web accessibility,
+          technical writing, graphic design, color theory, typography,
+
+          Human-Computer Interaction, End user programming, Web architecture,
+          Social computing, Data visualization
+        </div>
+      </RichText>
+
+      <RichText className={classes.index__section}>
+        <Typography variant="h6">Research interests</Typography>
+        <div className={classes.index__date}>
+          Blockchain, Machine Learning, AI, Deep Learning
+        </div>
       </RichText>
     </Section>
   )
 }
 
 export default withStyles(styles)(InterestsSection)
+
+//
+//
+//
+//

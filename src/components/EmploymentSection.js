@@ -144,7 +144,10 @@ function EmploymentSection({ classes, data }) {
                 className={classes.index__richText}
               >
                 dICO Application: A Decentralized ICO application built on top
-                of BarterDEX swap.
+                of BarterDEX swap. This was my first task at Komodo team and the
+                goal was to rewrite a dICO Application which based on meteor to
+                electron and react. It's quite very successful since it looks
+                more solid and easy to use than the old one.
               </Typography>
             </li>
             <li>
@@ -154,9 +157,9 @@ function EmploymentSection({ classes, data }) {
                 className={classes.index__richText}
               >
                 Dice Application: This is a virtual dice app for Dice Smart
-                Contracts.
+                Contracts. I built this demo in less than 1 month from scratch.
                 <ul>
-                  <li>Stack: Reactjs/Redux/Electronjs/Material UI</li>
+                  <li>Stack: Reactjs / Redux / Electronjs / Material UI</li>
                 </ul>
               </Typography>
               {diceappImages && diceappImages.edges.map(renderImage)}
@@ -168,9 +171,11 @@ function EmploymentSection({ classes, data }) {
                 className={classes.index__richText}
               >
                 Atomicdex Application: An instant exchange built on top of
-                BarterDEX swap. It is inspired by Changelly and ShapeShift.
+                BarterDEX swap. This application is inspired by Changelly and
+                ShapeShift. My colleagues said it looks more elegant, clean and
+                easy-to-use than the old one.
                 <ul>
-                  <li>Stack: Reactjs/Redux/Electronjs/Material UI</li>
+                  <li>Stack: Reactjs / Redux / Electronjs / Material UI</li>
                 </ul>
               </Typography>
               {atomicdexImages && atomicdexImages.edges.map(renderImage)}

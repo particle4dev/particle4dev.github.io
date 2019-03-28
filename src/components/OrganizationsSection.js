@@ -19,7 +19,7 @@ function OrganizationsSection({ classes }) {
 
       <Typography variant="body1" gutterBottom>
         Admin at React VietNam Group where are largest and active ReactJS
-        community in Vietnam.
+        community in Vietnam
       </Typography>
 
       <Typography variant="body1" gutterBottom>
