@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Fullstack Developer / DevOps / Open source / Scrum Master`,
+    title: `Front End / Fullstack Developer / DevOps / Scrum Master`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@particle4dev`,
   },
