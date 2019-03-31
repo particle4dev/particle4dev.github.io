@@ -75,7 +75,8 @@ function EmploymentSection({ classes, data }) {
             </Link>
           </Typography>
           <time className={classes.index__date}>
-            Do everything from planning to "getting shit done" - 02/2018 - 03/2019
+            Do everything from planning to "getting shit done" - 02/2018 -
+            03/2019
           </time>
           <IconButton
             aria-label="Show more"
@@ -104,7 +105,15 @@ function EmploymentSection({ classes, data }) {
             <br />
             Visit the website:{" "}
             <Link href="http://www.fiftyline.com" target="blank">
-              www.fiftyline.com
+              fiftyline.com
+            </Link>
+            <br />
+            Stack:{" "}
+            <Link
+              href="https://stackshare.io/fiftyline-llc/fiftyline"
+              target="blank"
+            >
+              stackshare.io/fiftyline-llc/fiftyline
             </Link>
           </Typography>
         </Collapse>
@@ -452,7 +461,9 @@ function EmploymentSection({ classes, data }) {
 
       <RichText>
         <Typography variant="h6">Freelancer</Typography>
-        <time className={classes.index__date}>On Upwork (formerly Elance) - 08/2011–07/2012</time>
+        <time className={classes.index__date}>
+          On Upwork (formerly Elance) - 08/2011–07/2012
+        </time>
       </RichText>
     </Section>
   )

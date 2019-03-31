@@ -41,8 +41,3 @@ function InterestsSection({ classes }) {
 }
 
 export default withStyles(styles)(InterestsSection)
-
-//
-//
-//
-//

@@ -90,7 +90,8 @@ function SkillsSection({ classes }) {
       <RichText className={classes.index__section}>
         <Typography variant="h6">Devops</Typography>
         <div className={classes.index__date}>
-          Jenkins, Consul, ELK, Terraform, setup CI/CD, Docker engine, docker compose, docker swarm
+          Jenkins, Consul, ELK, Terraform, setup CI/CD, Docker engine, docker
+          compose, docker swarm
         </div>
       </RichText>
 
