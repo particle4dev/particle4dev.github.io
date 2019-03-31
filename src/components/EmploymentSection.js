@@ -55,6 +55,7 @@ const styles = theme => ({
 })
 
 function EmploymentSection({ classes, data }) {
+  // const [commingUpState, setCommingUpState] = useState(true)
   const [fiftyline50State, setFiftyline50State] = useState(true)
   const [komodoState, setKomodoState] = useState(true)
   const [fptState, setFptState] = useState(false)
@@ -73,7 +74,9 @@ function EmploymentSection({ classes, data }) {
               @fiftyline50
             </Link>
           </Typography>
-          <time className={classes.index__date}>02/2018 - present</time>
+          <time className={classes.index__date}>
+            Shutdowned - 02/2018 - 03/2019
+          </time>
           <IconButton
             aria-label="Show more"
             className={ClassNames(classes.index__expandIcon, classes.expand, {

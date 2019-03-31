@@ -1,5 +1,4 @@
 import React from "react"
-import ClassNames from "classnames"
 import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
 import RichText from "./RichText"
