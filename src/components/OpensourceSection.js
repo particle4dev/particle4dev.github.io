@@ -74,7 +74,6 @@ function OpensourceSection({ classes }) {
       </RichText>
 
       <Typography variant="body1" gutterBottom>
-        To be written ... <br />
         You can check{" "}
         <Link href="https://github.com/particle4dev" target="_blank">
           my github
