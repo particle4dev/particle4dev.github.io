@@ -57,7 +57,7 @@ function AboutSection({ classes }) {
         gutterBottom
         className={classes.index__richText}
       >
-        Fullstack Developer / DevOps / Open source / Scrum Master / who love to
+        Front End / Fullstack Developer / DevOps / Scrum Master who love to
         build a great product
       </Typography>
       <Typography

@@ -32,7 +32,7 @@ function OpensourceSection({ classes }) {
           target="blank"
           className={classes.index__date}
         >
-          https://github.com/particle4dev/komodo-rpc-lib
+          github.com/particle4dev/komodo-rpc-lib
         </Link>
       </RichText>
       <RichText className={classes.index__section}>
@@ -44,7 +44,7 @@ function OpensourceSection({ classes }) {
           target="blank"
           className={classes.index__date}
         >
-          https://github.com/university-of-ant-solutions/ecmascript-training
+          github.com/university-of-ant-solutions/ecmascript-training
         </Link>
       </RichText>
       <RichText className={classes.index__section}>
@@ -56,7 +56,7 @@ function OpensourceSection({ classes }) {
           target="blank"
           className={classes.index__date}
         >
-          https://github.com/university-of-ant-solutions/react-mdl-library
+          github.com/university-of-ant-solutions/react-mdl-library
         </Link>
       </RichText>
       <RichText className={classes.index__section}>
@@ -69,12 +69,11 @@ function OpensourceSection({ classes }) {
           target="blank"
           className={classes.index__date}
         >
-          https://github.com/university-of-ant-solutions/feathers-fetch-service
+          github.com/university-of-ant-solutions/feathers-fetch-service
         </Link>
       </RichText>
 
       <Typography variant="body1" gutterBottom>
-        To be written ... <br />
         You can check{" "}
         <Link href="https://github.com/particle4dev" target="_blank">
           my github

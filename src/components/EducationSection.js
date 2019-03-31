@@ -32,7 +32,7 @@ function EducationSection({ classes }) {
           09/2008 - 02/2013
         </time>
       </RichText>
-      <RichText>
+      <RichText className={classes.index__section}>
         <Typography variant="h6">MongoDB University</Typography>
         <time className={classes.index__date}>
           M102 MongoDB for DBAs - 07/2013 - 09/2013 (2 months)
@@ -41,6 +41,25 @@ function EducationSection({ classes }) {
           <br />
           M202 MongoDB Advanced Deployment and Operations - 03/2016 - 05/2016 (2
           months)
+        </time>
+      </RichText>
+      <RichText className={classes.index__section}>
+        <Typography variant="h6">
+          Learning How to Learn: Powerful mental tools to help you master tough
+          subjects
+        </Typography>
+        <time className={classes.index__date}>
+          coursera.org - 03/2019 - Present
+          <br />
+        </time>
+      </RichText>
+      <RichText>
+        <Typography variant="h6">
+          AWS Certified Developer - Associate Level
+        </Typography>
+        <time className={classes.index__date}>
+          03/2019 - Present
+          <br />
         </time>
       </RichText>
     </Section>

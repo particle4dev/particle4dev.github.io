@@ -55,6 +55,7 @@ const styles = theme => ({
 })
 
 function EmploymentSection({ classes, data }) {
+  // const [commingUpState, setCommingUpState] = useState(true)
   const [fiftyline50State, setFiftyline50State] = useState(true)
   const [komodoState, setKomodoState] = useState(true)
   const [fptState, setFptState] = useState(false)
@@ -73,7 +74,10 @@ function EmploymentSection({ classes, data }) {
               @fiftyline50
             </Link>
           </Typography>
-          <time className={classes.index__date}>02/2018 - present</time>
+          <time className={classes.index__date}>
+            Do everything from planning to "getting shit done" - 02/2018 -
+            03/2019
+          </time>
           <IconButton
             aria-label="Show more"
             className={ClassNames(classes.index__expandIcon, classes.expand, {
@@ -101,7 +105,15 @@ function EmploymentSection({ classes, data }) {
             <br />
             Visit the website:{" "}
             <Link href="http://www.fiftyline.com" target="blank">
-              www.fiftyline.com
+              fiftyline.com
+            </Link>
+            <br />
+            Stack:{" "}
+            <Link
+              href="https://stackshare.io/fiftyline-llc/fiftyline"
+              target="blank"
+            >
+              stackshare.io/fiftyline-llc/fiftyline
             </Link>
           </Typography>
         </Collapse>
@@ -133,8 +145,10 @@ function EmploymentSection({ classes, data }) {
             gutterBottom
             className={classes.index__richText}
           >
-            As a Fullstack Developer, I worked on some decentralized
-            applications built on top of Komodo technologies:
+            I was hired as a Remote Fullstack Developer where I worked on some
+            decentralized applications. My main goal was to built the
+            application to make end-user easily accessible to Komodo
+            technologies. This is the list of dApp:
           </Typography>
           <ul>
             <li>
@@ -144,7 +158,10 @@ function EmploymentSection({ classes, data }) {
                 className={classes.index__richText}
               >
                 dICO Application: A Decentralized ICO application built on top
-                of BarterDEX swap.
+                of BarterDEX swap. This was my first task at Komodo team and the
+                goal was to rewrite a dICO Application which based on meteor to
+                electron and react. It's quite very successful since it looks
+                more solid and easy to use than the old one.
               </Typography>
             </li>
             <li>
@@ -154,9 +171,9 @@ function EmploymentSection({ classes, data }) {
                 className={classes.index__richText}
               >
                 Dice Application: This is a virtual dice app for Dice Smart
-                Contracts.
+                Contracts. I built this demo in less than 1 month from scratch.
                 <ul>
-                  <li>Stack: Reactjs/Redux/Electronjs/Material UI</li>
+                  <li>Stack: Reactjs / Redux / Electronjs / Material UI</li>
                 </ul>
               </Typography>
               {diceappImages && diceappImages.edges.map(renderImage)}
@@ -168,9 +185,12 @@ function EmploymentSection({ classes, data }) {
                 className={classes.index__richText}
               >
                 Atomicdex Application: An instant exchange built on top of
-                BarterDEX swap. It is inspired by Changelly and ShapeShift.
+                BarterDEX swap. This application is inspired by Changelly and
+                ShapeShift and the goal is to make end-user easily accessible to
+                "Atomic Swap" technology. My colleagues said it looks more
+                elegant, clean and easy-to-use than the old one.
                 <ul>
-                  <li>Stack: Reactjs/Redux/Electronjs/Material UI</li>
+                  <li>Stack: Reactjs / Redux / Electronjs / Material UI</li>
                 </ul>
               </Typography>
               {atomicdexImages && atomicdexImages.edges.map(renderImage)}
@@ -229,7 +249,7 @@ function EmploymentSection({ classes, data }) {
                 gutterBottom
                 className={classes.index__richText}
               >
-                Train the team about react and nodejs
+                Train the team about React and Nodejs
               </Typography>
             </li>
             <li>
@@ -238,7 +258,7 @@ function EmploymentSection({ classes, data }) {
                 gutterBottom
                 className={classes.index__richText}
               >
-                Work with devops team to set up infrastructure for a customer
+                Work with Devops team to set up infrastructure for a customer
               </Typography>
               <ul>
                 <li>
@@ -247,7 +267,7 @@ function EmploymentSection({ classes, data }) {
                     gutterBottom
                     className={classes.index__richText}
                   >
-                    Setup mongodb for staging and production environment
+                    Setup Mongodb for staging and production environment
                   </Typography>
                 </li>
                 <li>
@@ -441,7 +461,9 @@ function EmploymentSection({ classes, data }) {
 
       <RichText>
         <Typography variant="h6">Freelancer</Typography>
-        <time className={classes.index__date}>08/2011–07/2012</time>
+        <time className={classes.index__date}>
+          On Upwork (formerly Elance) - 08/2011–07/2012
+        </time>
       </RichText>
     </Section>
   )

@@ -65,5 +65,3 @@ Former VC at Trinity Ventures
 - Overcoming Career Chalenges
 
 - What Advice Would You Give Your Younger Self
-
-

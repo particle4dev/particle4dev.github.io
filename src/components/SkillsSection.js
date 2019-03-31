@@ -23,11 +23,6 @@ function SkillsSection({ classes }) {
   return (
     <Section color>
       <HeaderSection id="skills-section" title="Programming Skills" />
-      <RichText className={classes.index__section}>
-        <Typography variant="h6" gutterBottom>
-          Software engineering && devops && Scrum master
-        </Typography>
-      </RichText>
 
       <RichText className={classes.index__section}>
         <Typography variant="h6">
@@ -95,14 +90,8 @@ function SkillsSection({ classes }) {
       <RichText className={classes.index__section}>
         <Typography variant="h6">Devops</Typography>
         <div className={classes.index__date}>
-          Jenkins, Consul, ELK, Terraform, setup CI/CD
-        </div>
-      </RichText>
-
-      <RichText className={classes.index__section}>
-        <Typography variant="h6">Docker</Typography>
-        <div className={classes.index__date}>
-          Docker engine, docker compose, docker swarm
+          Jenkins, Consul, ELK, Terraform, setup CI/CD, Docker engine, docker
+          compose, docker swarm
         </div>
       </RichText>
 

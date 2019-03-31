@@ -31,7 +31,7 @@ function AboutSection({ classes }) {
         gutterBottom
         className={classes.index__richText}
       >
-        Fullstack Developer / DevOps / Open source / Scrum Master / who love to
+        Front End / Fullstack Developer / DevOps / Scrum Master who love to
         build a great product
       </Typography>
       <Typography
@@ -39,13 +39,11 @@ function AboutSection({ classes }) {
         gutterBottom
         className={classes.index__richText}
       >
-        I am Senior Full Stack Developer with 8 years of experience, I've
-        acquired some good knowledge in a variety of technologies from React to
-        AWS. I am enthusiastic about my job and excited to come in every day to
-        learn and contribute.
+        I am Freelancer on weekday and Solo Startup Founder on weekend. With 8
+        years of experience, I've acquired some good knowledge in a variety of
+        technologies from React to AWS. Currently, I focus on web technology and
+        decentralized system.
         <br />
-        <Link href="#skills-section">Here</Link> to see a summary of the
-        technologies I've been involved with.
       </Typography>
       <Grid container spacing={24}>
         <Grid
