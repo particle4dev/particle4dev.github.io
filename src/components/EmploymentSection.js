@@ -75,7 +75,7 @@ function EmploymentSection({ classes, data }) {
             </Link>
           </Typography>
           <time className={classes.index__date}>
-            Shutdowned - 02/2018 - 03/2019
+            Do everything from planning to "getting shit done" - 02/2018 - 03/2019
           </time>
           <IconButton
             aria-label="Show more"
