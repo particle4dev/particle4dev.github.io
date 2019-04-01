@@ -7,7 +7,7 @@ tags: [computer-science]
 
 One of my goals in this year is improve my coding skills, especially in algorithm and data structure. I forgot most of them since I graduated from university. A few days ago, my friend suggested me about [Daily Coding Problem](https://www.dailycodingproblem.com/) so decided to give it a shot.
 
-**What is [Daily Coding Problem](https://www.dailycodingproblem.com/)**
+**What is [Daily Coding Problem](https://www.dailycodingproblem.com/)?**
 
 Daily Coding Problem is a simple and useful platform that emails you one coding problem to solve in every morning. This ensures that you practice consistently and often enough to stay in shape over along period of time. The premium memebership also offers the opportunity to verify your solution.
 
