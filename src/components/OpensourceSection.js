@@ -25,6 +25,18 @@ function OpensourceSection({ classes }) {
       <HeaderSection title="Open source" />
       <RichText className={classes.index__section}>
         <Typography variant="h6">
+          f50-cron: A cron job boilerplate with AWS Lambda and AWS Cloudwatch
+        </Typography>
+        <Link
+          href="https://github.com/particle4dev/f50-cron"
+          target="blank"
+          className={classes.index__date}
+        >
+          github.com/particle4dev/f50-cron
+        </Link>
+      </RichText>
+      <RichText className={classes.index__section}>
+        <Typography variant="h6">
           kmd-rpc: Komodo RPC Library for modern JavaScript
         </Typography>
         <Link
