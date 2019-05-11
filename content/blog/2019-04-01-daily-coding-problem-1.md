@@ -7,7 +7,7 @@ tags: [computer-science]
 
 One of my goals in this year is improve my coding skills, especially in algorithm and data structure. I forgot most of them since I graduated from university. A few days ago, my friend suggested me about [Daily Coding Problem](https://www.dailycodingproblem.com/) so decided to give it a shot.
 
-**What is [Daily Coding Problem](https://www.dailycodingproblem.com/)?**
+### What is [Daily Coding Problem](https://www.dailycodingproblem.com/)?
 
 Daily Coding Problem is a simple and useful platform that emails you one coding problem to solve in every morning. This ensures that you practice consistently and often enough to stay in shape over along period of time. The premium memebership also offers the opportunity to verify your solution.
 
@@ -25,7 +25,7 @@ For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
 Bonus: Can you do this in one pass?
 ```
 
-**This is my solution in JS**
+### This is my solution in JS
 
 ```js
 const test = require('tape')
@@ -45,7 +45,7 @@ test('find two numbers up to k number test', function (t) {
 })
 ```
 
-**Explanation**
+### Explanation
 
 My solution is very simple. First, I generated a new array that contains the the difference between the element in the input array and k.
 
@@ -59,7 +59,7 @@ In second step, I checked if the new array has any element in the input array. I
 return subArrays.some(e => arr.indexOf(e) !== -1)
 ```
 
-**Conclusion**
+### Conclusion
 
 [Daily Coding Problem](https://www.dailycodingproblem.com/) is very useful platform. You should check it out if you have a chance. I think not only it can help you improving your coding skills,
 it also can help you to reeparee for an interview in big company like Google, Apple ...
