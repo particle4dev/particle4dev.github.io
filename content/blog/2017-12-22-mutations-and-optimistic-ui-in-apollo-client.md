@@ -8,7 +8,7 @@ Apollo Client là một chức năng đơn giản của GraphQL Client, làm vi�
 
 Apollo cung cấp một công cụ đơn giản để làm việc với mutation khi cần giữ các bản cập nhật và hiệu chỉnh các kết quả trả về cho UI.
 
-**I. Tạo Mutation**
+### I. Tạo Mutation
 
 Mutation trong GraphQL bao gồm hai phần:
  - Mutation sẽ call với những tham số gì?
@@ -37,7 +37,7 @@ client.mutate({
 })
 ```
 
-**II. Updating Query Results**
+### II. Updating Query Results
 
 Sau khi mutation được thực hiện và dữ liệu đã được thay đổi trên server, người dùng mong muốn tất cả những phần UI đều được thay đổi như ý của họ.
 
@@ -77,7 +77,7 @@ client.mutate({
 ```
 Như function trong **updateQueries** ở trên (giống như một reducer function),  old query result (previousQueryResult), a new object (mutation result) sẽ được hợp vào và được trả về trong new query result.
 
-**III. Optimistic UI**
+### III. Optimistic UI
 
 Câu chuyện về mutation có thể kết thúc nếu độ trễ (delay) của Internet toàn cầu bằng không. Nhưng điều đó không thể xảy ra nên mọi sự giao tiếp với server đều có độ trễ nhất định.
 
@@ -102,10 +102,10 @@ client.mutate({
 });
 ```
 
-**IV. Minimal updates under the hood (Updating...)**
+### IV. Minimal updates under the hood (Updating...)
 
 As you might have noticed, your reducer function always operates on the query result, and not some normalized format. But don’t be fooled! Internally, Apollo Client normalizes the results of both queries and mutation updates into a store, to get benefits such as query caching and consistency across the store. You can open up Redux dev-tools and inspect how Apollo Client’s integrates these results into the internal state format.
 
-**V. Link**
+### V. Link
 
 - [dev-blog.apollodata.com](https://dev-blog.apollodata.com/mutations-and-optimistic-ui-in-apollo-client-517eacee8fb0)

@@ -15,7 +15,7 @@ Well, when we talk about programming languages in reality, it is much more than 
 
 Here are a few things you must consider when you choose a programming language for a software project.
 
-**I - Reliability**
+### I - Reliability
 
 Of course, a language must be reliable in order to be useful when we write software.
 
@@ -25,13 +25,13 @@ For example, all the languages have problems with implementing floating point nu
 
 The reliability also exists in many different areas of a programming languages, such as interacting with operating systems, interacting with devices.
 
-**II - Security**
+### II - Security
 
 At language’s level, the syntax of a language will affect the security of programs written in that language. For example if a language allows developers to write some weird statements, they can potentially inject some unforeseen code that execute malice functions. 
 
 Or some dynamic languages that expose too much meta programming also allow developers to write unsafe programs.
 
-**III - Performance**
+### III - Performance
 
 People often hear that “Language A is fast” or “Language B is slow”.
 
@@ -63,13 +63,13 @@ For example, executing one line of Java code, for argument sake just assume gene
 
 So a real complex Ruby program can run 10 times faster than a  program with same functionality written in Java.
 
-**IV - Supported platforms**
+### IV - Supported platforms
 
 Some languages are available only on Window. Some others  available only on Mac, or only on Linux ...etc..
 
 There are tons of operating systems running on computers, tablets, phones, embedded hardware, so when you write a program, depends on what platforms you want to support, you have to choose a right language.
 
-**V - Productivity**
+### V - Productivity
 
 Productivity of a language is how fast a good developer  team can use a language to write a production-ready software.
 
@@ -91,7 +91,7 @@ Some languages will allow you to write code faster, more testable and maintainab
 
 Less code to write, less Object Hierarchy to worry about. And less Object Hierarchy management means less computing resources consumption too.
 
-**VI - Quality of compilers / interpreters**
+### VI - Quality of compilers / interpreters
 
 Programming languages need something to make programs written in them into machine-executable.
 
@@ -109,7 +109,7 @@ Or choosing between C and Go. C has better performance than Go, but Go compiler 
 
 On the other hand, if you need super fast performance, C runtime is better than Go runtime.
 
-**VII - Ecosystem**
+### VII - Ecosystem
 
 Ecosystems of programming languages consist of:
 
@@ -123,7 +123,7 @@ Ecosystems of programming languages consist of:
 
  Some programming languages have better eco systems than others. So programming languages are not just languages. Eco systems of some languages will make them more suitable, more productive, and even more feasible than other languages for specific purposes.
 
-**VIII - Availability of workforce**
+### VIII - Availability of workforce
 
 When we develop a software, we need people who can write programs.
 
@@ -131,7 +131,7 @@ It doesn’t matter how cool a programming language is, how great the compiler/i
 
 For example, on certain project, I had requirements to build a massive parallel processing platform. Erlang and Elixir would be great candidate for this kind of application. But I could not find enough Erlang and Elixir programmers on the market, so I went with Go programming language, a very good language for parallel processing, with good performance, but with super ugly syntax and some immature supported libraries.
 
-**IX - Special features of languages**
+### IX - Special features of languages
 
 A lot of programming languages can be considered as generic purpose programming languages, i.e. they can be used to write almost any kinds of applications.
 
@@ -151,7 +151,7 @@ In case of COBOL, unless you are working for some dinosaurs, you don’t even ha
 
 ***Some languages have syntax and facility that allow you to define Domain Specific Language (DSL), building higher abstract language on a language, so you can write software faster, easier to understand, maintain and extend.***
 
-**X - Beauty of Syntax and Semantics**
+### X - Beauty of Syntax and Semantics
 
 Most of programming languages have if, else, do, while, for, switch, case, when, string, array, hash ..etc.. (Functional programming languages don’t have loop).
 
@@ -189,13 +189,13 @@ Go has even worse syntax. The Go syntax has a lot of unnecessary boilder-plate c
 
 So for the same purpose, more or less same functionality, we should choose programming languages with more beautiful syntax and semantics instead of the ugly ones.
 
-**Conclusion**
+### Conclusion
 
 In theory, when you are still in kindergarten or in primary school, programming languages are just languages. However, if you are any kind of decent software engineer, for the love of programming, please stop saying “A programming language is just a language”.
 
 Of course, if you are a terrible programmer, it doesn’t really matter whether you write one line or five lines of code to print the string “Hello, world.”, because it is all you can write anyway. So please feel free to dream all your life long “A programming language is just a language.”.
 
 
-**XI. LINK**
+### XI. LINK
 
 1. [http://hanoian.com/content/index.php/20-a-programming-language-is-not-just-a-language](http://hanoian.com/content/index.php/20-a-programming-language-is-not-just-a-language)

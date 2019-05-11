@@ -11,7 +11,7 @@ The concept of a process is fundamental concept of a Linux system. Processes can
 
 In this tutorial, we will discuss life cycle of a process and touch base on various aspects that a process goes through in its life cycle.
 
-**I. Code Vs Program Vs Process**
+### I. Code Vs Program Vs Process
 
 Lets first understand difference between code, program and process.
 
@@ -59,7 +59,7 @@ $ ps -aef | grep hello*
 
 To understand the output of ps command, read our article on [7 ps command examples](http://www.thegeekstuff.com/2011/04/ps-command-examples/).
 
-**II. Parent and Child Process**
+### II. Parent and Child Process
 
 Every process has a parent process and it may or may not have child processes. Lets take this one by one. Consider the output of ps command on my Ubuntu machine :
 
@@ -89,7 +89,7 @@ Now, lets come to child processes. Whenever a process creates another process, t
 
 We discussed that every process has a parent process, this can bring a question that what will happen to a child process whose parent process is killed? Well, this is a good question but lets come back to it sometime later.
 
-**III. The init Process**
+### III. The init Process
 
 When Linux system is booted, First thing that gets loaded into memory is vmlinuz. It is the compressed Linux kernel executable. This results in the creation of init process. This is the first process that gets created. Init process has PID of one, and is the super parent of all the processes in a Linux session. If you consider Linux process structure as a tree then init is the starting node of that tree.
 
@@ -147,7 +147,7 @@ The output confirms that init is at the top of process tree. Also, if you observ
 
 Now, lets come back to the question (we left open in the last section) about the consequences when parent process gets killed while child is still alive. Well in this case, the child obviously becomes orphan but is adopted by the init process. So, init process becomes the new parent of those child processes whose parents are terminated.
 
-**IV. Process Life Cycle**
+### IV. Process Life Cycle
 
 In this section, we will discuss the life cycle of a normal Linux process covers before it is killed and removed from kernel process table.
 
@@ -158,6 +158,6 @@ In this section, we will discuss the life cycle of a normal Linux process covers
 - A [process can be killed](http://www.thegeekstuff.com/2009/12/4-ways-to-kill-a-process-kill-killall-pkill-xkill/) through many ways. It can call exit() function to exit or can process [Linux signals](http://www.thegeekstuff.com/2012/03/catch-signals-sample-c-code/) to exit. Also, some signals cannot be caught and cause the process to terminate immediately.
 - There are [different types of Linux process](http://www.thegeekstuff.com/2012/02/unix-process-overview/). Once the process is killed, it does not get completely eliminated. An entry containing some information related to it is kept in the Kernel process address table till the parent process explicitly calls wait() or waitpid() functions to get the exit status of child process. Until parent process does this, the terminated process is known as zombie process.
 
-**V. LINK**
+### V. LINK
 
 1. [http://www.thegeekstuff.com/2013/07/linux-process-life-cycle/](http://www.thegeekstuff.com/2013/07/linux-process-life-cycle/)
