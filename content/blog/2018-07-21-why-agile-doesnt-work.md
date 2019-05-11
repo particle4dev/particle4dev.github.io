@@ -22,7 +22,7 @@ I will write only about things that cause Agile to fail, not the whole Agile met
 
 As Scrum is the most popular in the industry by 2018, and others are not much different, with the exception of XP, I will discuss a broad view of Agile, and use specific illustration with Scrum to explain my opinion why Agile doesn’t work.
 
-**I. Agile in general, why practices don’t work?**
+### I. Agile in general, why practices don’t work?
 
 **1. Design by Committee**
 
@@ -62,7 +62,7 @@ Pair programming is two programmers sit at the same computer, work on the same t
 
 **4. XP (eXtreme Programming)** eXtreme Programming (XP) is a sub methodology of Agile. It is not just one single practice as the things above. It is worth mentioning here, because it is fundamentally different than other Agile’s sub methodologies. XP advocates that project teams  just need to have a minimum, just enough ideas about business requirements and the software they will build, then just write it. No need for lengthy documents, endless meetings, nothing. Requirements - Code – Test – Deliver. Easy to see it is hard to work with complex requirements. And XP requires a team of all good engineers who know what they are doing, good QAs, good stakeholders. In 2018, that kind of teams exists only in dream and theory. Last time I have seen such a team was in 2002\.
 
-**II. Agile: Applied in Scrum**
+### II. Agile: Applied in Scrum
 
 **1. Scrum team structure**
 
@@ -133,7 +133,7 @@ d) The Sprint Review
 
 e) The Retrospective
 
-**III. Conclusions**
+### III. Conclusions
 
 Agile methodology and its sub methodologies were born to address the short coming of previous methodology: Waterfalls.
 
@@ -150,6 +150,6 @@ If people have no required skills: train them. If they are too stupid and don’
 
 Investing more in education instead of investing in methodologies will fix the problem.
 
-**IV. LINK**
+### IV. LINK
 
 1. [http://hanoian.com/content/index.php/26-why-agile-doesn-t-work](http://hanoian.com/content/index.php/26-why-agile-doesn-t-work)
