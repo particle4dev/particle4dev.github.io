@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Disqus from "disqus-react"
 import rehypeReact from "rehype-react"
 import Typography from "@material-ui/core/Typography"
 import { withStyles } from "@material-ui/core/styles"
@@ -30,11 +31,19 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
-    const { classes, pageContext } = this.props
+    const { classes, pageContext, location } = this.props
     const { previous, next } = pageContext
+    const { host } = this.props.data.site
+
+    const disqusShortname = "meteornotes"
+    const disqusConfig = {
+      url: location.href,
+      identifier: post.id,
+      title: post.frontmatter.title,
+    }
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={location} title={siteTitle}>
         <BioSection />
         <Section>
           <SEO
@@ -92,6 +101,12 @@ class BlogPostTemplate extends React.Component {
               )}
             </li>
           </ul>
+        </Section>
+        <Section>
+          <Disqus.DiscussionEmbed
+            shortname={disqusShortname}
+            config={disqusConfig}
+          />
         </Section>
       </Layout>
     )
