@@ -31,19 +31,19 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
-    const { classes, pageContext } = this.props
+    const { classes, pageContext, location } = this.props
     const { previous, next } = pageContext
     const { host } = this.props.data.site
 
     const disqusShortname = "meteornotes"
     const disqusConfig = {
-      url: `https://${host}${post.fields.slug}`,
+      url: location.href,
       identifier: post.id,
       title: post.frontmatter.title,
     }
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={location} title={siteTitle}>
         <BioSection />
         <Section>
           <SEO
@@ -122,7 +122,6 @@ export const pageQuery = graphql`
         title
         author
       }
-      host
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
