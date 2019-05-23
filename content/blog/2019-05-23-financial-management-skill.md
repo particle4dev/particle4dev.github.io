@@ -42,14 +42,23 @@ Hàng tháng, mình có lên ngân sách sẽ tiêu bao nhiêu vào từng kho�
 Ngân sách nó còn giúp mình nhận ra rằng sau khi đã trừ đi những khoản cố định, số còn lại chẳng đáng là bao. Nó cũng giúp mình lên kế hoạch tiết kiệm bao nhiêu trăm thu nhập. Một ngân sách cho một bạn độc thân có thể có hình thù như thế này.
 
 Tổng thu nhập: 10T
+
 Nhà: 3T (30%)
+
 Điện nước: 1T (10%)
+
 Điện thoại: 500k (5%)
+
 Ăn ngoài: 1T (10%)
+
 Đi chợ nấu ăn: 50k/ngày * 30 ngày = 1.5T (15%)
+
 Cà phê: 500k (5%)
+
 Xăng: 500k (5%)
+
 Mua sắm linh tinh: 1T (10%)
+
 Phụ sinh: 1T (10%)
 
 Bạn có thể nhìn vào bản ngân sách và thấy rằng mỗi tháng bạn chẳng tiết kiệm được đồng nào, vậy nên phải cắt giảm chi phí gấp. Bạn có thể bớt ăn ngoài đi, tìm phòng trọ rẻ hơn, uống ít cà phê đi, bớt các khoản phụ sinh, bớt tiền mua đồ ăn hàng ngày, bớt mua sắm linh tinh, v.v.v. Mình có một nguyên tắc là không bao giờ tiêu nhiều hơn 30% khoản thu nhập của mình vào tiền thuê nhà.
