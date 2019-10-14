@@ -16,9 +16,15 @@ Có rất nhiều cách để run K8S trên AWS như [EKS](https://aws.amazon.co
 
 ### 1. Yêu cầu trước khi cài đặt Cluster trên AWS
 
-Đầu tiên bạn cần 1 tài khoản AWS và 
+#### Cài đặt kubectl
 
-#### Cài đặt aws cli
+Để cài đặt cluster, bạn phải cài đặt thành công kubectl trước. kubectl là Kubernetes command-line tool giúp bạn chạy lệnh trên Kubernetes cluster. Bạn có thể sử dụng kubectl để deploy applications, kiểm tra và quản lý tài nguyên cluster, và xem logs.
+
+```sh
+curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl
+chmod +x ./kubectl
+mv ./kubectl /usr/local/bin/kubectl
+```
 
 #### Cài dặt kops
 
@@ -29,13 +35,9 @@ chmod +x ./kops-darwin-amd64
 mv ./kops-darwin-amd64 ./bin/kops
 ```
 
-#### Cài đặt kubectl
+#### Cài đặt aws cli
 
-```sh
-curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl
-chmod +x ./kubectl
-mv ./kubectl ./bin/kubectl
-```
+Đầu tiên bạn cần 1 tài khoản AWS và 
 
 #### Tạo route53 cho cluster
 
@@ -142,3 +144,5 @@ $ kops delete cluster k8s.fiftyline.com --state=s3://k8s.fiftyline.com --yes
 ### Kết luận
 
 ### Link tham khảo
+
+- [Installing Kubernetes on AWS with kops](https://kubernetes.io/docs/setup/custom-cloud/kops/)
