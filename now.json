@@ -3,7 +3,7 @@
     "name": "www.particle4dev.com",
     "alias": "www.particle4dev.com",
     "builds": [{
-        "src": "packages/www/package.json",
+        "src": "package.json",
         "use": "@now/static-build",
         "config": {
             "distDir": "public"
@@ -12,7 +12,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "packages/www/$1"
+            "dest": "$1"
         }
     ]
 }
