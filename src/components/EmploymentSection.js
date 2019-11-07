@@ -68,6 +68,23 @@ function EmploymentSection({ classes, data }) {
       <HeaderSection title="Employment" />
       <RichText className={classes.index__section}>
         <header className={classes.index__header}>
+          <Typography variant="h6">Fullstack Developer</Typography>
+          <time className={classes.index__date}>
+            <Link href="https://chainmakers.co" target="blank">
+              Chainmakers
+            </Link>
+            , Remote Developer - 03/2019 - 11/2019
+          </time>
+          <IconButton
+            aria-label="Show more"
+            className={ClassNames(classes.index__expandIcon, classes.expand)}
+          >
+            <ExpandMoreIcon />
+          </IconButton>
+        </header>
+      </RichText>
+      <RichText className={classes.index__section}>
+        <header className={classes.index__header}>
           <Typography variant="h6">
             Founder at{" "}
             <Link href="http://www.fiftyline.com" target="blank">
