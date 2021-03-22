@@ -56,8 +56,9 @@ const styles = theme => ({
 
 function EmploymentSection({ classes, data }) {
   // const [commingUpState, setCommingUpState] = useState(true)
-  const [fiftyline50State, setFiftyline50State] = useState(true)
+  const [lilypetshopState, setLilypetshopState] = useState(true)
   const [komodoState, setKomodoState] = useState(true)
+  const [fiftyline50State, setFiftyline50State] = useState(false)
   const [fptState, setFptState] = useState(false)
   const [citymeState, setCitymeState] = useState(false)
   const [hitchLabState, setHitchLabState] = useState(false)
@@ -66,73 +67,59 @@ function EmploymentSection({ classes, data }) {
   return (
     <Section color>
       <HeaderSection title="Employment" />
-      <RichText className={classes.index__section}>
-        <header className={classes.index__header}>
-          <Typography variant="h6">Fullstack Developer</Typography>
-          <time className={classes.index__date}>
-            <Link href="https://chainmakers.co" target="blank">
-              Chainmakers
-            </Link>
-            , Remote Developer - 03/2019 - 11/2019
-          </time>
-          <IconButton
-            aria-label="Show more"
-            className={ClassNames(classes.index__expandIcon, classes.expand)}
-          >
-            <ExpandMoreIcon />
-          </IconButton>
-        </header>
-      </RichText>
+
       <RichText className={classes.index__section}>
         <header className={classes.index__header}>
           <Typography variant="h6">
             Founder at{" "}
-            <Link href="http://www.fiftyline.com" target="blank">
-              @fiftyline50
+            <Link href="#lilypetshop">
+              @lilypetshop
             </Link>
           </Typography>
           <time className={classes.index__date}>
-            Do everything from planning to "getting shit done" - 02/2018 -
-            03/2019
+            06/2019 - 01/2021
           </time>
           <IconButton
             aria-label="Show more"
             className={ClassNames(classes.index__expandIcon, classes.expand, {
-              [classes.expandOpen]: fiftyline50State,
+              [classes.expandOpen]: lilypetshopState,
             })}
-            aria-expanded={fiftyline50State}
-            onClick={() => setFiftyline50State(!fiftyline50State)}
+            aria-expanded={lilypetshopState}
+            onClick={() => setLilypetshopState(!lilypetshopState)}
           >
             <ExpandMoreIcon />
           </IconButton>
         </header>
-        <Collapse in={fiftyline50State} timeout="auto" unmountOnExit>
+        <Collapse in={lilypetshopState} timeout="auto" unmountOnExit>
           <Typography
             variant="body1"
             gutterBottom
             className={classes.index__richText}
           >
-            <Link href="http://www.fiftyline.com" target="blank">
-              Fiftyline
-            </Link>{" "}
-            is the easy-to-use cryptocurrency portfolio management platform. We
-            provide the service that help you to keep track of all your
-            cryptocurrency investments, get the latest coin prices, news and
-            some special reports.
+            Started a new business with my friend in the Pet industry, purchased goods from China and sold them on some e-commerce platforms in Vietnam. Before Covid-19,  we had grown our revenue from 0 to 8000$ per month in just 6 months.
             <br />
-            Visit the website:{" "}
-            <Link href="http://www.fiftyline.com" target="blank">
-              fiftyline.com
-            </Link>
-            <br />
-            Stack:{" "}
-            <Link
-              href="https://stackshare.io/fiftyline-llc/fiftyline"
-              target="blank"
-            >
-              stackshare.io/fiftyline-llc/fiftyline
-            </Link>
+            I built several internal-tools to help the business grow sales:
           </Typography>
+          <ul>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Inventory management tool: synchronize inventory across multiple platforms to avoid shortage of goods and loss of sales. This app is very important to us because we sell products on multiple platforms (shopee, lazada, tiki .v.v.v.)
+              </Typography>
+            </li>
+            <li>
+              <Typography
+                variant="body1"
+                gutterBottom
+                className={classes.index__richText}
+              >
+                Automatic-message tool: automatically send order status messages or promotions to customers.
+              </Typography>
+            </li>
+          </ul>
         </Collapse>
       </RichText>
 
@@ -141,9 +128,9 @@ function EmploymentSection({ classes, data }) {
           <Typography variant="h6">Fullstack Developer</Typography>
           <time className={classes.index__date}>
             <Link href="https://komodoplatform.com" target="blank">
-              Komodo Platform
+              Komodo Platform & Chainmakers
             </Link>
-            , Remote Developer - 08/2018 - 03/2019
+            , Remote Developer - 08/2018 - 11/2019
           </time>
           <IconButton
             aria-label="Show more"
@@ -213,6 +200,59 @@ function EmploymentSection({ classes, data }) {
               {atomicdexImages && atomicdexImages.edges.map(renderImage)}
             </li>
           </ul>
+        </Collapse>
+      </RichText>
+
+      <RichText className={classes.index__section}>
+        <header className={classes.index__header}>
+          <Typography variant="h6">
+            Founder at{" "}
+            <Link href="http://www.fiftyline.com" target="blank">
+              @fiftyline50
+            </Link>
+          </Typography>
+          <time className={classes.index__date}>
+            Do everything from planning to "getting shit done" - 02/2018 -
+            03/2019
+          </time>
+          <IconButton
+            aria-label="Show more"
+            className={ClassNames(classes.index__expandIcon, classes.expand, {
+              [classes.expandOpen]: fiftyline50State,
+            })}
+            aria-expanded={fiftyline50State}
+            onClick={() => setFiftyline50State(!fiftyline50State)}
+          >
+            <ExpandMoreIcon />
+          </IconButton>
+        </header>
+        <Collapse in={fiftyline50State} timeout="auto" unmountOnExit>
+          <Typography
+            variant="body1"
+            gutterBottom
+            className={classes.index__richText}
+          >
+            <Link href="http://www.fiftyline.com" target="blank">
+              Fiftyline
+            </Link>{" "}
+            is the easy-to-use cryptocurrency portfolio management platform. We
+            provide the service that help you to keep track of all your
+            cryptocurrency investments, get the latest coin prices, news and
+            some special reports.
+            <br />
+            Visit the website:{" "}
+            <Link href="http://www.fiftyline.com" target="blank">
+              fiftyline.com
+            </Link>
+            <br />
+            Stack:{" "}
+            <Link
+              href="https://stackshare.io/fiftyline-llc/fiftyline"
+              target="blank"
+            >
+              stackshare.io/fiftyline-llc/fiftyline
+            </Link>
+          </Typography>
         </Collapse>
       </RichText>
 
