@@ -1,5 +1,5 @@
 ---
-title: How Linux Process Life Cycle Works – Parent, Child, and Init Process
+title: How Linux Process Life Cycle Works – Parent, Child, and Init Process 23
 date: "2016-07-18T00:00:00.000Z"
 description: The concept of a process is fundamental concept of a Linux system. Processes can spawn other processes, kill other processes, communicate with other processes and much more. In this tutorial, we will discuss life cycle of a process and touch base on various aspects that a process goes through in its life cycle.
 tags: [linux]
@@ -43,7 +43,7 @@ This would produce an executable named helloWorld. This executable is known as a
 Process: Now, lets run this executable :
 
 ```c
-$ ./helloWorld 
+$ ./helloWorld
 
 Hello World
 ```
